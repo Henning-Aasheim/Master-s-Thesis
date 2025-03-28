@@ -1,0 +1,160 @@
+\documentclass[12pt]{report} % Longer texts should use report, and this defines the letter size as 12pt
+
+% PACKAGES -------------------------------------------------------------------------------------
+
+% Layout
+\usepackage[utf8]{inputenc} % Defines the encoding as utf-8
+\usepackage{graphicx} % Required for inserting images
+\usepackage[english]{babel} % English language package
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,marginparwidth=1.75cm]{geometry}
+\usepackage[autostyle]{csquotes} % For using block-quotes
+\usepackage{float} % Used to keep tables and figures in place
+
+% Text
+\usepackage[colorlinks=true, allcolors=black]{hyperref} % Keeps hyperlinks black
+\usepackage{lettrine} % This makes it possible to use large first letter for new chapters
+\usepackage{lmodern} % This package must me useed to ensure that the lettrine package works as it is supposed to (It is a font that is scaleable, unlike the the default one)
+\usepackage{amsmath} % Required for maths
+\usepackage{amsfonts} % Required for checkmark
+\usepackage{dcolumn} % Used for making decimal-centred columns
+
+% Citations
+\usepackage[autostyle]{csquotes} % For using block-quotes
+\usepackage{natbib} % Required for citation
+\usepackage[nottoc]{tocbibind} % Package to add bibliography to the table of contents
+
+% Tables
+\usepackage{booktabs} % CHECK WHAT THIS DOES, it might be for getting the tables working correctly
+\usepackage{tabularx} % For making tables fit the page
+\usepackage{array} % For aligning text in the cells
+\usepackage[table]{xcolor} % For colouring tables
+\usepackage{ragged2e} % Provides \justifying
+\usepackage{tabularray} % To display datasummary tables
+\usepackage{codehigh} % Highlights code, idk. 
+\usepackage{makecell} % To enable line-break in table cells
+
+% Infographics
+\usepackage{tikz} % For making infographic boxes and arrows
+\usepackage{circuitikz} % Tikz when using figure maker
+
+% CONFIGURATIONS -------------------------------------------------------------------------------
+
+% Tikz
+\usetikzlibrary{arrows.meta,bending,positioning,shapes.geometric}
+
+% Citations
+\bibliographystyle{chicago} % Sets citation style to chicago
+\setcitestyle{aysep={}} % Removes comma between author and year for in-text citations
+
+% Lettrine settings
+\renewcommand*{\DefaultLoversize}{0.0}
+%%%
+
+% Datasummary table commands
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
+\newcommand{\tinytableTabularrayUnderline}[1]{\underline{#1}}
+\newcommand{\tinytableTabularrayStrikeout}[1]{\sout{#1}}
+\NewTableCommand{\tinytableDefineColor}[3]{\definecolor{#1}{#2}{#3}}
+
+% Tables
+\newcolumntype{L}{D{.}{.}{2,5}} % Defines column type for centring on dots
+
+% Graphics
+\graphicspath{ {./graphics/} }
+
+% Colours
+\definecolor{Orange}{HTML}{ff9214}
+\definecolor{Blue}{HTML}{003F5C}
+
+% FRONT PAGE -----------------------------------------------------------------------------------
+
+\title{{Lorem ipsum}\\
+       {\large University of Oslo}
+       %{logo}
+}
+\author{Henning Åsheim}
+\date{May 2025}
+
+% STRUCTURE ------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    Data and R-scripts can be found at: \\
+    \href{https://github.com/Henning-Aasheim/Authoritarian-Diffusion-MA-Thesis}{\textit{https://github.com/Henning-Aasheim/Authoritarian-Diffusion-MA-Thesis}}
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\chapter{Introduction} \label{chp:introduction}
+\pagenumbering{arabic}
+\input{chapters/1_introduction}
+
+\chapter{Literature Review} \label{chp:literature}
+\input{chapters/2_literature}
+
+\chapter{Theory} \label{chp:theory}
+\input{chapters/3_theory}
+
+\chapter{Research Design} \label{chp:research_design}
+\input{chapters/4_research}
+
+\chapter{Analysis} \label{chp:analysis}
+\input{chapters/5_analysis}
+
+\chapter{Discussion}
+\input{chapters/6_discussion} \label{chp:discussion}
+
+\chapter{Conclusion}
+\input{chapters/7_conclusion} \label{chp:conclusion}
+
+%TC:ignore 
+\bibliography{references.bib}
+
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    I am indebted to the creators and maintainers of the program language R and the following R-packages for making my project possible: \\
+    R: \citet{r_core_team_r_2024} \\
+    Tidyverse: \citet{wickham_welcome_2019} \\
+    Readsdmx: \citet{queljoe_readsdmx_2023} \\
+    Modelsummary: \citet{arel-bundock_modelsummary_2022} \\
+    Countrycode: \citet{arel-bundock_countrycode_2018} \\
+    Fixest: \citet{berge_efficient_2018} \\
+    Maps: \citet{becker_maps_2024} \\
+    Ggtext: \citet{wilke_ggtext_2022} \\
+    Vdemdata: \citet{maerz_vdemdata_2025} \\
+    WDI: \citet{arel-bundock_wdi_2022}
+    
+\end{center}
+\vspace*{\fill}
+
+\newpage
+
+\appendix
+\chapter{Robustness Tables} \label{apn:robust}
+\input{chapters/8_appendix}
+
+\chapter{Alternative models} \label{apn:models}
+\input{chapters/9_appendix}
+
+\chapter{Notes} \label{apn:notes}
+\input{chapters/10_appendix}
+%TC:endignore 
+\end{document}

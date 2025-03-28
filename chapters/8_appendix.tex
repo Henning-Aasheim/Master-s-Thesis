@@ -1,0 +1,649 @@
+\lettrine{A}{ppendix A includes extra tables} for analysing the robustness of the results. It is therefore strongly connected to the penultimate section of the analysis chapter (Section \ref{sec:robust})
+
+\section{time lag}
+In this section I present four tables with different time lags, each for one of the four models included in Chapter \ref{chp:analysis}. The two first are models looking at hypothesis one, with the first being the simple model from Equation \ref{equ:h1}, while the second uses the change in linkages instead of using linkages directly (Equation \ref{equ:h1_delta}). I run the models for time lags between one and five years, using the most complex model (Models 1.6 and 1.12). The two next models runs the same models as above for the second hypothesis (Equations \ref{equ:h2} and \ref{equ:h2_delta}). 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_lag,caption=Lagged Model 1.6,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.1.1 & Model A.1.2 & Model A.1.3 & Model A.1.4 & Model A.1.5 \\ \midrule %% TinyTableHeader
+Linkages to China & -0.004 & 0.013 & 0.018 & 0.021 & 0.048 \\
+& (0.101) & (0.098) & (0.095) & (0.096) & (0.100) \\
+log(GDP per capita) & -0.008 & -0.011 & -0.014 & -0.015 & -0.019 \\
+& (0.020) & (0.019) & (0.019) & (0.019) & (0.018) \\
+Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid & 0.002* & 0.001x & 0.001 & 0.000 & -0.001 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Linkages (West) & -0.010 & -0.006 & -0.004 & -0.003 & -0.001 \\
+& (0.008) & (0.008) & (0.008) & (0.009) & (0.010) \\
+Electoral autocracy & 0.101** & 0.094** & 0.085** & 0.071* & 0.064* \\
+& (0.032) & (0.032) & (0.031) & (0.031) & (0.032) \\
+Electoral democracy & 0.268*** & 0.242*** & 0.208*** & 0.173*** & 0.142*** \\
+& (0.036) & (0.035) & (0.032) & (0.031) & (0.031) \\
+Liberal democracy & 0.309*** & 0.276*** & 0.234*** & 0.191*** & 0.153*** \\
+& (0.037) & (0.035) & (0.033) & (0.031) & (0.031) \\
+Num.Obs. & 4481 & 4319 & 4157 & 3993 & 3829 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.915 & 0.913 & 0.910 & 0.908 & 0.908 \\
+R2 Within Adj. & 0.251 & 0.201 & 0.143 & 0.098 & 0.064 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_delta_lag,caption=Lagged model 1.12,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.1.6 & Model A.1.7 & Model A.1.8 & Model A.1.9 & Model A.1.10 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.121 & 0.136 & 0.098 & 0.055 & 0.047 \\
+& (0.073) & (0.090) & (0.087) & (0.084) & (0.084) \\
+log(GDP per capita) & -0.009 & -0.011 & -0.014 & -0.014 & -0.018 \\
+& (0.020) & (0.020) & (0.019) & (0.020) & (0.019) \\
+Resource rents & 0.000 & -0.001 & -0.001 & -0.001 & 0.000 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid & 0.002* & 0.001x & 0.001 & 0.000 & -0.001 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Linkages (West) & -0.009 & -0.006 & -0.005 & -0.003 & -0.001 \\
+& (0.008) & (0.008) & (0.009) & (0.009) & (0.010) \\
+Electoral autocracy & 0.100** & 0.094** & 0.084** & 0.071* & 0.064* \\
+& (0.031) & (0.031) & (0.030) & (0.031) & (0.031) \\
+Electoral democracy & 0.265*** & 0.239*** & 0.207*** & 0.173*** & 0.142*** \\
+& (0.036) & (0.034) & (0.032) & (0.031) & (0.031) \\
+Liberal democracy & 0.304*** & 0.271*** & 0.233*** & 0.190*** & 0.152*** \\
+& (0.036) & (0.035) & (0.032) & (0.031) & (0.031) \\
+Num.Obs. & 4305 & 4144 & 4144 & 3981 & 3818 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.917 & 0.915 & 0.911 & 0.910 & 0.910 \\
+R2 Within Adj. & 0.248 & 0.197 & 0.145 & 0.101 & 0.064 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_lag,caption=Lagged Model 2.5 (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.1.11 & Model A.1.12 & Model A.1.13 & Model A.1.14 & Model A.1.15 \\ \midrule %% TinyTableHeader
+Linkages to China & -0.040 & -0.029 & -0.043 & -0.044 & -0.012 \\
+& (0.196) & (0.166) & (0.150) & (0.140) & (0.135) \\
+Electoral autocracy & 0.093* & 0.086* & 0.077* & 0.065 & 0.059 \\
+& (0.036) & (0.038) & (0.039) & (0.041) & (0.043) \\
+Electoral democracy & 0.265*** & 0.235*** & 0.194*** & 0.155*** & 0.122** \\
+& (0.042) & (0.042) & (0.040) & (0.041) & (0.042) \\
+Liberal democracy & 0.320*** & 0.287*** & 0.243*** & 0.200*** & 0.163*** \\
+& (0.042) & (0.041) & (0.040) & (0.040) & (0.041) \\
+China x El.Aut. & 0.069 & 0.067 & 0.075 & 0.065 & 0.051 \\
+& (0.256) & (0.223) & (0.201) & (0.182) & (0.167) \\
+China x El.Dem. & 0.010 & 0.064 & 0.159 & 0.233 & 0.257 \\
+& (0.238) & (0.224) & (0.224) & (0.236) & (0.250) \\
+China x Lib.Dem. & -0.253 & -0.266 & -0.245 & -0.233 & -0.246 \\
+& (0.250) & (0.240) & (0.238) & (0.240) & (0.247) \\
+log(GDP per capita) & -0.011 & -0.014 & -0.017 & -0.018 & -0.023 \\
+& (0.020) & (0.019) & (0.018) & (0.018) & (0.018) \\
+Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid & 0.002* & 0.001x & 0.001 & 0.000 & -0.001 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Linkages (West) & -0.007 & -0.003 & -0.001 & 0.000 & 0.002 \\
+& (0.008) & (0.008) & (0.009) & (0.009) & (0.010) \\
+Num.Obs. & 4481 & 4319 & 4157 & 3993 & 3829 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.915 & 0.913 & 0.910 & 0.909 & 0.908 \\
+R2 Within Adj. & 0.252 & 0.202 & 0.146 & 0.102 & 0.069 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_delta_lag,caption=Lagged Model 2.10 (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.1.16 & Model A.1.17 & Model A.1.18 & Model A.1.19 & Model A.1.20 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.105 & 0.063 & -0.020 & -0.067 & -0.044 \\
+& (0.089) & (0.212) & (0.225) & (0.225) & (0.199) \\
+Electoral autocracy & 0.099** & 0.092** & 0.082* & 0.070* & 0.064x \\
+& (0.031) & (0.033) & (0.032) & (0.033) & (0.033) \\
+Electoral democracy & 0.264*** & 0.238*** & 0.205*** & 0.170*** & 0.139*** \\
+& (0.035) & (0.036) & (0.034) & (0.033) & (0.032) \\
+Liberal democracy & 0.306*** & 0.273*** & 0.233*** & 0.189*** & 0.150*** \\
+& (0.036) & (0.036) & (0.034) & (0.032) & (0.032) \\
+China x El.Aut. & 0.086 & 0.137 & 0.147 & 0.107 & 0.038 \\
+& (0.151) & (0.244) & (0.248) & (0.248) & (0.226) \\
+China x El.Dem. & -0.113 & -0.006 & 0.182 & 0.321 & 0.339 \\
+& (0.134) & (0.300) & (0.323) & (0.337) & (0.343) \\
+China x Lib.Dem. & -0.226* & -0.186 & -0.041 & 0.067 & 0.194 \\
+& (0.112) & (0.251) & (0.263) & (0.260) & (0.249) \\
+log(GDP per capita) & -0.009 & -0.011 & -0.013 & -0.014 & -0.018 \\
+& (0.020) & (0.020) & (0.019) & (0.019) & (0.019) \\
+Resource rents & 0.000 & -0.001 & -0.001 & -0.001 & 0.000 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid & 0.002* & 0.001x & 0.001 & 0.000 & -0.001 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Linkages (West) & -0.007 & -0.005 & -0.004 & -0.003 & -0.001 \\
+& (0.008) & (0.008) & (0.009) & (0.009) & (0.010) \\
+Num.Obs. & 4305 & 4144 & 4144 & 3981 & 3818 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.917 & 0.915 & 0.911 & 0.910 & 0.910 \\
+R2 Within Adj. & 0.249 & 0.197 & 0.145 & 0.101 & 0.065 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table}
+
+\newpage
+
+\section{Models without lag on the dependent variable}
+In this section I present some models without time lag on the dependent variable to test to what extent this has an impact on the estimation. I find that it does not have much impact on the estimations. I run 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_x_lag,caption=Models without lag on the dependent variable,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6,7}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6,7}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.2.1 & Model A.2.2 & Model A.2.3 & Model A.2.4 & Model A.2.5 & Model A.2.6 \\ \midrule %% TinyTableHeader
+Linkages to China & -0.072 & -0.089 & -0.056 & -0.052 & -0.093 & -0.033 \\
+& (0.133) & (0.135) & (0.126) & (0.127) & (0.128) & (0.105) \\
+log(GDP per capita) &  & 0.013 & 0.003 & 0.009 & 0.017 & -0.005 \\
+&  & (0.020) & (0.020) & (0.022) & (0.023) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.001 & 0.001 & 0.002* \\
+&  &  &  & (0.001) & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.022x & -0.013 \\
+&  &  &  &  & (0.011) & (0.008) \\
+Electoral autocracy &  &  &  &  &  & 0.105** \\
+&  &  &  &  &  & (0.032) \\
+Electoral democracy &  &  &  &  &  & 0.278*** \\
+&  &  &  &  &  & (0.037) \\
+Liberal democracy &  &  &  &  &  & 0.323*** \\
+&  &  &  &  &  & (0.038) \\
+Num.Obs. & 5154 & 5150 & 4657 & 4637 & 4637 & 4637 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.874 & 0.874 & 0.883 & 0.884 & 0.884 & 0.915 \\
+R2 Within Adj. & 0.000 & 0.001 & 0.000 & 0.002 & 0.007 & 0.270 \\
+FE: country & X & X & X & X & X & X \\
+FE: year & X & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_delta_x_lag,caption=Models change in linkages and without lag on the dependent variable,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6,7}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6,7}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.2.7 & Model A.2.8 & Model A.2.9 & Model A.2.10 & Model A.2.11 & Model A.2.12 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.181x & 0.181x & 0.167 & 0.183x & 0.181x & 0.116 \\
+& (0.101) & (0.101) & (0.105) & (0.107) & (0.107) & (0.084) \\
+log(GDP per capita) &  & 0.010 & 0.002 & 0.008 & 0.013 & -0.007 \\
+&  & (0.020) & (0.021) & (0.022) & (0.023) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.001 & 0.001 & 0.002* \\
+&  &  &  & (0.001) & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.019x & -0.012 \\
+&  &  &  &  & (0.011) & (0.008) \\
+Electoral autocracy &  &  &  &  &  & 0.104** \\
+&  &  &  &  &  & (0.032) \\
+Electoral democracy &  &  &  &  &  & 0.275*** \\
+&  &  &  &  &  & (0.036) \\
+Liberal democracy &  &  &  &  &  & 0.318*** \\
+&  &  &  &  &  & (0.038) \\
+Num.Obs. & 4968 & 4964 & 4478 & 4460 & 4460 & 4460 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.877 & 0.876 & 0.885 & 0.886 & 0.886 & 0.916 \\
+R2 Within Adj. & 0.004 & 0.004 & 0.003 & 0.006 & 0.010 & 0.269 \\
+FE: country & X & X & X & X & X & X \\
+FE: year & X & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_x_lag,caption=Models without lag on the dependent variable (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.2.13 & Model A.2.14 & Model A.2.15 & Model A.2.16 & Model A.2.17 \\ \midrule %% TinyTableHeader
+Linkages to China & -0.068 & -0.046 & -0.105 & -0.105 & -0.125 \\
+& (0.217) & (0.229) & (0.251) & (0.245) & (0.246) \\
+Electoral autocracy & 0.109** & 0.112** & 0.088* & 0.092** & 0.091** \\
+& (0.039) & (0.039) & (0.035) & (0.035) & (0.035) \\
+Electoral democracy & 0.291*** & 0.295*** & 0.269*** & 0.272*** & 0.271*** \\
+& (0.042) & (0.043) & (0.041) & (0.041) & (0.041) \\
+Liberal democracy & 0.347*** & 0.353*** & 0.328*** & 0.332*** & 0.327*** \\
+& (0.044) & (0.045) & (0.044) & (0.044) & (0.042) \\
+China x El.Aut. & -0.012 & -0.013 & 0.143 & 0.146 & 0.144 \\
+& (0.300) & (0.304) & (0.320) & (0.309) & (0.308) \\
+China x El.Dem. & -0.039 & -0.042 & 0.041 & 0.044 & 0.050 \\
+& (0.261) & (0.264) & (0.279) & (0.272) & (0.272) \\
+China x Lib.Dem. & -0.245 & -0.274 & -0.217 & -0.217 & -0.157 \\
+& (0.266) & (0.282) & (0.291) & (0.281) & (0.281) \\
+log(GDP per capita) &  & -0.013 & -0.021 & -0.012 & -0.008 \\
+&  & (0.017) & (0.017) & (0.019) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.002* & 0.002** \\
+&  &  &  & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.010 \\
+&  &  &  &  & (0.008) \\
+Num.Obs. & 5154 & 5150 & 4657 & 4637 & 4637 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.908 & 0.908 & 0.914 & 0.915 & 0.915 \\
+R2 Within Adj. & 0.269 & 0.270 & 0.264 & 0.271 & 0.272 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_delta_x_lag,caption=Models change in linkages and without lag on the dependent variable (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.2.18 & Model A.2.19 & Model A.2.20 & Model A.2.21 & Model A.2.22 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.164 & 0.166 & 0.181x & 0.238* & 0.234* \\
+& (0.101) & (0.101) & (0.108) & (0.117) & (0.117) \\
+Electoral autocracy & 0.103** & 0.106** & 0.099** & 0.103** & 0.102** \\
+& (0.033) & (0.033) & (0.032) & (0.032) & (0.032) \\
+Electoral democracy & 0.283*** & 0.287*** & 0.271*** & 0.274*** & 0.273*** \\
+& (0.036) & (0.036) & (0.036) & (0.036) & (0.036) \\
+Liberal democracy & 0.327*** & 0.331*** & 0.317*** & 0.321*** & 0.319*** \\
+& (0.038) & (0.038) & (0.039) & (0.039) & (0.038) \\
+China x El.Aut. & -0.008 & -0.009 & -0.047 & -0.093 & -0.094 \\
+& (0.165) & (0.164) & (0.167) & (0.171) & (0.170) \\
+China x El.Dem. & -0.229x & -0.226x & -0.220x & -0.291* & -0.282* \\
+& (0.125) & (0.126) & (0.126) & (0.132) & (0.133) \\
+China x Lib.Dem. & -0.307* & -0.310* & -0.293* & -0.378** & -0.338** \\
+& (0.123) & (0.123) & (0.122) & (0.128) & (0.130) \\
+log(GDP per capita) &  & -0.013 & -0.019 & -0.010 & -0.007 \\
+&  & (0.017) & (0.018) & (0.019) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.002* & 0.002** \\
+&  &  &  & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.010 \\
+&  &  &  &  & (0.008) \\
+Num.Obs. & 4968 & 4964 & 4478 & 4460 & 4460 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.909 & 0.909 & 0.915 & 0.916 & 0.916 \\
+R2 Within Adj. & 0.269 & 0.270 & 0.263 & 0.271 & 0.272 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table}
+
+\newpage
+
+\section{Differing deltas}
+In this section I present two tables showing Models 1.6 and 2.6 with differing number of years of change in linkages. I changes from one to five years for models with and without interactions.
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_diff_delta,caption=Different number of years of change in linkages,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.3.1 & Model A.3.2 & Model A.3.3 & Model A.3.4 & Model A.3.5 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.248 & 0.205x & 0.121 & 0.124 & 0.123 \\
+& (0.161) & (0.109) & (0.073) & (0.079) & (0.085) \\
+log(GDP per capita) & -0.008 & -0.008 & -0.009 & -0.008 & -0.009 \\
+& (0.020) & (0.020) & (0.020) & (0.020) & (0.020) \\
+Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid & 0.002* & 0.002* & 0.002* & 0.002* & 0.002* \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Linkages (West) & -0.009 & -0.008 & -0.009 & -0.009 & -0.009 \\
+& (0.008) & (0.008) & (0.008) & (0.008) & (0.008) \\
+Electoral autocracy & 0.100** & 0.102** & 0.100** & 0.099** & 0.100** \\
+& (0.032) & (0.033) & (0.031) & (0.031) & (0.032) \\
+Electoral democracy & 0.268*** & 0.267*** & 0.265*** & 0.265*** & 0.266*** \\
+& (0.036) & (0.037) & (0.036) & (0.035) & (0.036) \\
+Liberal democracy & 0.309*** & 0.309*** & 0.304*** & 0.303*** & 0.303*** \\
+& (0.037) & (0.038) & (0.036) & (0.036) & (0.037) \\
+Num.Obs. & 4477 & 4310 & 4305 & 4299 & 4295 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.915 & 0.918 & 0.917 & 0.916 & 0.916 \\
+R2 Within Adj. & 0.251 & 0.251 & 0.248 & 0.249 & 0.249 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_diff_delta,caption=Different number of years of change in linkages (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.3.6 & Model A.3.7 & Model A.3.8 & Model A.3.9 & Model A.3.10 \\ \midrule %% TinyTableHeader
+Linkages to China & -0.232 & 0.095 & 0.105 & 0.143 & 0.173 \\
+& (0.359) & (0.243) & (0.089) & (0.102) & (0.117) \\
+Electoral autocracy & 0.097** & 0.099** & 0.099** & 0.098** & 0.099** \\
+& (0.032) & (0.034) & (0.031) & (0.031) & (0.032) \\
+Electoral democracy & 0.266*** & 0.267*** & 0.264*** & 0.264*** & 0.265*** \\
+& (0.036) & (0.038) & (0.035) & (0.035) & (0.036) \\
+Liberal democracy & 0.309*** & 0.311*** & 0.306*** & 0.306*** & 0.306*** \\
+& (0.037) & (0.039) & (0.036) & (0.036) & (0.037) \\
+China x El.Aut. & 0.776x & 0.249 & 0.086 & 0.040 & 0.003 \\
+& (0.447) & (0.307) & (0.151) & (0.156) & (0.168) \\
+China x El.Dem. & 0.167 & -0.128 & -0.113 & -0.151 & -0.185 \\
+& (0.482) & (0.345) & (0.134) & (0.127) & (0.133) \\
+China x Lib.Dem. & -0.061 & -0.286 & -0.226* & -0.241* & -0.264* \\
+& (0.439) & (0.298) & (0.112) & (0.116) & (0.127) \\
+log(GDP per capita) & -0.008 & -0.007 & -0.009 & -0.008 & -0.011 \\
+& (0.020) & (0.020) & (0.020) & (0.020) & (0.020) \\
+Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid & 0.002* & 0.002* & 0.002* & 0.002* & 0.002* \\
+& (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
+Linkages (West) & -0.009 & -0.008 & -0.007 & -0.007 & -0.005 \\
+& (0.008) & (0.008) & (0.008) & (0.008) & (0.008) \\
+Num.Obs. & 4477 & 4310 & 4305 & 4299 & 4295 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.915 & 0.918 & 0.917 & 0.916 & 0.916 \\
+R2 Within Adj. & 0.253 & 0.251 & 0.249 & 0.251 & 0.252 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\newpage
+
+\section{Bandwidth}
+In this section I run a model with the bandwidth variable included in the FBIC dataset \citet{moyer_china-us_2021}. Bandwidth measures number of linkages between countries, but not their size. This is equivalent to linkages in \citet{levitsky_linkage_2006}, while their size would be equivalent to leverage. I here rerun the four models included in the analysis chapter (Tables \ref{tab:h1}, \ref{tab:h1_delta}, \ref{tab:h2}, and \ref{tab:h2_delta})
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_bandwidth,caption=Models using bandwidth,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6,7}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6,7}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.4.1 & Model A.4.2 & Model A.4.3 & Model A.4.4 & Model A.4.5 & Model A.4.6 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.043 & 0.027 & 0.056 & 0.058 & 0.026 & 0.033 \\
+& (0.137) & (0.141) & (0.124) & (0.123) & (0.125) & (0.102) \\
+log(GDP per capita) &  & 0.010 & -0.002 & 0.005 & 0.010 & -0.009 \\
+&  & (0.021) & (0.021) & (0.023) & (0.023) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.001 & 0.001 & 0.002* \\
+&  &  &  & (0.001) & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.005* & -0.004x \\
+&  &  &  &  & (0.002) & (0.002) \\
+Electoral autocracy &  &  &  &  &  & 0.100** \\
+&  &  &  &  &  & (0.032) \\
+Electoral democracy &  &  &  &  &  & 0.267*** \\
+&  &  &  &  &  & (0.036) \\
+Liberal democracy &  &  &  &  &  & 0.309*** \\
+&  &  &  &  &  & (0.037) \\
+Num.Obs. & 4985 & 4981 & 4501 & 4481 & 4481 & 4481 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.877 & 0.877 & 0.887 & 0.887 & 0.888 & 0.915 \\
+R2 Within Adj. & 0.000 & 0.001 & 0.000 & 0.002 & 0.008 & 0.253 \\
+FE: country & X & X & X & X & X & X \\
+FE: year & X & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h1_bandwidth_delta,caption=Models using change in bandwidth,
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6,7}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{18}={1,2,3,4,5,6,7}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.4.7 & Model A.4.8 & Model A.4.9 & Model A.4.10 & Model A.4.11 & Model A.4.12 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.248** & 0.247** & 0.209** & 0.224** & 0.219** & 0.146* \\
+& (0.083) & (0.082) & (0.079) & (0.080) & (0.079) & (0.064) \\
+log(GDP per capita) &  & 0.010 & -0.001 & 0.006 & 0.010 & -0.009 \\
+&  & (0.021) & (0.021) & (0.023) & (0.023) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.001 & 0.001 & 0.002* \\
+&  &  &  & (0.001) & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.005* & -0.004x \\
+&  &  &  &  & (0.002) & (0.002) \\
+Electoral autocracy &  &  &  &  &  & 0.098** \\
+&  &  &  &  &  & (0.031) \\
+Electoral democracy &  &  &  &  &  & 0.262*** \\
+&  &  &  &  &  & (0.035) \\
+Liberal democracy &  &  &  &  &  & 0.303*** \\
+&  &  &  &  &  & (0.036) \\
+Num.Obs. & 4800 & 4796 & 4323 & 4305 & 4305 & 4305 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.881 & 0.881 & 0.890 & 0.890 & 0.891 & 0.917 \\
+R2 Within Adj. & 0.007 & 0.007 & 0.005 & 0.008 & 0.014 & 0.251 \\
+FE: country & X & X & X & X & X & X \\
+FE: year & X & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_bandwidth,caption=Models using bandwidth (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.4.13 & Model A.4.14 & Model A.4.15 & Model A.4.16 & Model A.4.17 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.063 & 0.081 & 0.048 & 0.039 & 0.000 \\
+& (0.175) & (0.184) & (0.194) & (0.193) & (0.195) \\
+Electoral autocracy & 0.128* & 0.130* & 0.101* & 0.103* & 0.101* \\
+& (0.055) & (0.055) & (0.048) & (0.048) & (0.048) \\
+Electoral democracy & 0.273*** & 0.276*** & 0.251*** & 0.251*** & 0.246*** \\
+& (0.056) & (0.057) & (0.053) & (0.053) & (0.053) \\
+Liberal democracy & 0.338*** & 0.342*** & 0.317*** & 0.320*** & 0.304*** \\
+& (0.051) & (0.052) & (0.049) & (0.049) & (0.047) \\
+China x El.Aut. & -0.131 & -0.129 & -0.012 & -0.003 & -0.002 \\
+& (0.238) & (0.238) & (0.239) & (0.233) & (0.232) \\
+China x El.Dem. & 0.038 & 0.038 & 0.102 & 0.114 & 0.135 \\
+& (0.212) & (0.213) & (0.216) & (0.214) & (0.213) \\
+China x Lib.Dem. & -0.106 & -0.117 & -0.071 & -0.068 & 0.031 \\
+& (0.182) & (0.188) & (0.189) & (0.184) & (0.186) \\
+log(GDP per capita) &  & -0.011 & -0.020 & -0.012 & -0.008 \\
+&  & (0.018) & (0.018) & (0.019) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.002* & 0.002* \\
+&  &  &  & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.004x \\
+&  &  &  &  & (0.002) \\
+Num.Obs. & 4985 & 4981 & 4501 & 4481 & 4481 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.908 & 0.907 & 0.914 & 0.915 & 0.916 \\
+R2 Within Adj. & 0.248 & 0.248 & 0.246 & 0.251 & 0.254 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table} 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{talltblr}[         %% tabularray outer open
+label=tab:h2_bandwidth_delta,caption=Models using change in bandwidth (interaction),
+note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+column{2,3,4,5,6}={}{halign=c,},
+column{1}={}{halign=l,},
+hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
+}                     %% tabularray inner close
+\toprule
+& Model A.4.18 & Model A.4.19 & Model A.4.20 & Model A.4.21 & Model A.4.22 \\ \midrule %% TinyTableHeader
+Linkages to China & 0.074 & 0.077 & 0.061 & 0.112 & 0.103 \\
+& (0.086) & (0.086) & (0.092) & (0.094) & (0.093) \\
+Electoral autocracy & 0.099** & 0.102** & 0.096** & 0.099** & 0.097** \\
+& (0.035) & (0.035) & (0.031) & (0.031) & (0.031) \\
+Electoral democracy & 0.271*** & 0.275*** & 0.262*** & 0.264*** & 0.262*** \\
+& (0.038) & (0.038) & (0.035) & (0.036) & (0.035) \\
+Liberal democracy & 0.314*** & 0.317*** & 0.303*** & 0.306*** & 0.304*** \\
+& (0.039) & (0.039) & (0.037) & (0.037) & (0.036) \\
+China x El.Aut. & 0.240x & 0.238x & 0.179 & 0.138 & 0.138 \\
+& (0.130) & (0.131) & (0.134) & (0.135) & (0.134) \\
+China x El.Dem. & -0.013 & -0.016 & 0.017 & -0.040 & -0.026 \\
+& (0.124) & (0.124) & (0.128) & (0.131) & (0.130) \\
+China x Lib.Dem. & -0.144 & -0.141 & -0.095 & -0.159 & -0.131 \\
+& (0.095) & (0.097) & (0.098) & (0.100) & (0.096) \\
+log(GDP per capita) &  & -0.011 & -0.019 & -0.011 & -0.008 \\
+&  & (0.018) & (0.018) & (0.020) & (0.020) \\
+Resource rents &  &  & 0.000 & 0.000 & 0.000 \\
+&  &  & (0.001) & (0.001) & (0.001) \\
+Aid &  &  &  & 0.002* & 0.002* \\
+&  &  &  & (0.001) & (0.001) \\
+Linkages (West) &  &  &  &  & -0.003x \\
+&  &  &  &  & (0.002) \\
+Num.Obs. & 4800 & 4796 & 4323 & 4305 & 4305 \\
+Std.Errors & by: country & by: country & by: country & by: country & by: country \\
+R2 Adj. & 0.910 & 0.909 & 0.916 & 0.917 & 0.917 \\
+R2 Within Adj. & 0.245 & 0.246 & 0.244 & 0.250 & 0.252 \\
+FE: country & X & X & X & X & X \\
+FE: year & X & X & X & X & X \\
+\bottomrule
+\end{talltblr}
+}
+\end{table}
