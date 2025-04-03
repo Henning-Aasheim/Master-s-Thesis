@@ -17,6 +17,7 @@
 \usepackage{amsmath} % Required for maths
 \usepackage{amsfonts} % Required for checkmark
 \usepackage{dcolumn} % Used for making decimal-centred columns
+\usepackage{anyfontsize} % Used to change fontsize (mainly for tables)
 
 % Citations
 \usepackage[autostyle]{csquotes} % For using block-quotes
@@ -32,6 +33,7 @@
 \usepackage{tabularray} % To display datasummary tables
 \usepackage{codehigh} % Highlights code, idk. 
 \usepackage{makecell} % To enable line-break in table cells
+\usepackage{longtable} % Used to make multi-page tables
 
 % Infographics
 \usepackage{tikz} % For making infographic boxes and arrows
@@ -59,6 +61,7 @@
 
 % Tables
 \newcolumntype{L}{D{.}{.}{2,5}} % Defines column type for centring on dots
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Centered columntype for use in longtable
 
 % Graphics
 \graphicspath{ {./graphics/} }
@@ -148,8 +151,8 @@
 \newpage
 
 \appendix
-\chapter{Robustness Tables} \label{apn:robust}
-\input{chapters/8_appendix}
+%\chapter{Robustness Tables} \label{apn:robust}
+%\input{chapters/8_appendix}
 
 \chapter{Alternative models} \label{apn:models}
 \input{chapters/9_appendix}
