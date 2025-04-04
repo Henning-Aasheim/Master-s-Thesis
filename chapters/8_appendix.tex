@@ -1,13 +1,13 @@
 \lettrine{A}{ppendix A includes extra tables} for analysing the robustness of the results. It is therefore strongly connected to the penultimate section of the analysis chapter (Section \ref{sec:robust})
 
-\section{time lag}
+\section{Time lag}
 In this section I present four tables with different time lags, each for one of the four models included in Chapter \ref{chp:analysis}. The two first are models looking at hypothesis one, with the first being the simple model from Equation \ref{equ:h1}, while the second uses the change in linkages instead of using linkages directly (Equation \ref{equ:h1_delta}). I run the models for time lags between one and five years, using the most complex model (Models 1.6 and 1.12). The two next models runs the same models as above for the second hypothesis (Equations \ref{equ:h2} and \ref{equ:h2_delta}). 
 
 \begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_lag,caption=Lagged Model 1.6,
+label=tab:h1_lag,caption=Lagged Model 1.6 (linkages: direct),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -50,7 +50,7 @@ Lag & 1 & 2 & 3 & 4 & 5 \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_delta_lag,caption=Lagged model 1.12,
+label=tab:h1_delta_lag,caption=Lagged model 1.12 (linkages: change),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -94,7 +94,7 @@ $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_lag,caption=Lagged Model 2.5 (interaction),
+label=tab:h2_lag,caption=Lagged Model 2.5 (linkages: direct, regime: interaction),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -143,7 +143,7 @@ Lag & 1 & 2 & 3 & 4 & 5 \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_delta_lag,caption=Lagged Model 2.10 (interaction),
+label=tab:h2_delta_lag,caption=Lagged Model 2.10 (linkages: change, regime: interaction),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -198,7 +198,7 @@ In this section I present some models without time lag on the dependent variable
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_x_lag,caption=Models without lag on the dependent variable,
+label=tab:h1_x_lag,caption=Models without lag on the dependent variable (direct),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -240,7 +240,7 @@ FE: year & X & X & X & X & X & X \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_delta_x_lag,caption=Models with change in linkages and without lag on the dependent variable,
+label=tab:h1_delta_x_lag,caption=Models without lag on the dependent variable (linkages: change),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -283,7 +283,7 @@ $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_x_lag,caption=Models without lag on the dependent variable (interaction),
+label=tab:h2_x_lag,caption=Models without lag on the dependent variable (linkages: direct, regime: interaction),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -331,7 +331,7 @@ FE: year & X & X & X & X & X \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_delta_x_lag,caption=Models with change in linkages and without lag on the dependent variable (interaction),
+label=tab:h2_delta_x_lag,caption=Models without lag on the dependent variable (linkages: change, regime: interaction),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -482,7 +482,7 @@ In this section I run a model with the bandwidth variable included in the FBIC d
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_bandwidth,caption=Models using bandwidth,
+label=tab:h1_bandwidth,caption=Models using bandwidth (linkages: direct),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -524,7 +524,7 @@ FE: year & X & X & X & X & X & X \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_bandwidth_delta,caption=Models using change in bandwidth,
+label=tab:h1_bandwidth_delta,caption=Models using change in bandwidth (linkages: change),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -567,7 +567,7 @@ $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_bandwidth,caption=Models using bandwidth (interaction),
+label=tab:h2_bandwidth,caption=Models using bandwidth (linkages: direct, regime: interaction),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -615,7 +615,7 @@ FE: year & X & X & X & X & X \\
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_bandwidth_delta,caption=Models using change in bandwidth (interaction),
+label=tab:h2_bandwidth_delta,caption=Models using change in bandwidth (linkages: change, regime: interaction),
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
