@@ -7,7 +7,7 @@ The main findings is that both my hypotheses were unsubstantiated; that linkages
 \centering
 \caption{Changes in freedom of expression and linkages to China}
 \label{tab:change}
-\begin{tabular}{lLp{1mm}lL}
+\begin{tabular}{lLp{15mm}lL}
 \toprule
 Country & \multicolumn{1}{c}{Freedom} & & Country & \multicolumn{1}{c}{Linkage} \\
 \midrule
@@ -25,6 +25,7 @@ Russia & -0.735 & & The Gambia & -0.067 \\
 \cellcolor[HTML]{003F5C}\textcolor{white}{Nicaragua} & -0.869 &  &
 \cellcolor[HTML]{003F5C}\textcolor{white}{North Korea} & -0.201 \\
 \bottomrule
+\multicolumn{5}{p{0.7\textwidth}}{\raggedright{\textit{For freedom score the the difference is measured between 1994 and 2024 \citep{coppedge_v-dem_2025}, while for linkage score it is the difference between 1994 and 2023 \citep{moyer_china-us_2021}.}}}
 \end{tabular}
 \end{table}
 
@@ -64,7 +65,7 @@ As a quick reminder, hypothesis one states that: \textit{thicker linkages to Chi
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1,caption=Standard two-way fixed-effects models,
+label=tab:h1,caption={Standard two-way fixed-effects models},
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -76,31 +77,31 @@ hline{18}={1,2,3,4,5,6,7}{solid, black, 0.05em},
 \toprule
 & \textbf{Model 1.1} & \textbf{Model 1.2} & \textbf{Model 1.3} & \textbf{Model 1.4} & \textbf{Model 1.5} & \textbf{Model 1.6} \\ \midrule %% TinyTableHeader
 \SetCell{bg=Orange} Linkages to China &
-\SetCell{bg=Orange} -0.053 & 
-\SetCell{bg=Orange} -0.072 & 
-\SetCell{bg=Orange} -0.034 & 
-\SetCell{bg=Orange} -0.032 & 
-\SetCell{bg=Orange} -0.063 & 
-\SetCell{bg=Orange} -0.005 \\
-& (0.132) & (0.134) & (0.122) & (0.122) & (0.122) & (0.101) \\
-log(GDP per capita) &  & 0.013 & 0.001 & 0.007 & 0.013 & -0.008 \\
-&  & (0.021) & (0.020) & (0.022) & (0.023) & (0.020) \\
+\SetCell{bg=Orange} -0.081 & 
+\SetCell{bg=Orange} -0.093 & 
+\SetCell{bg=Orange} -0.069 & 
+\SetCell{bg=Orange} -0.067 & 
+\SetCell{bg=Orange} -0.111 & 
+\SetCell{bg=Orange} -0.058 \\
+& (0.132) & (0.134) & (0.127) & (0.128) & (0.130) & (0.111) \\
+log(GDP per capita) &  & 0.009 & 0.001 & 0.008 & 0.016 & -0.003 \\
+&  & (0.019) & (0.020) & (0.022) & (0.023) & (0.020) \\
 Resource rents &  &  & 0.000 & 0.000 & 0.000 & 0.000 \\
 &  &  & (0.001) & (0.001) & (0.001) & (0.001) \\
-Aid &  &  &  & 0.001 & 0.001 & 0.002* \\
+Aid &  &  &  & 0.001 & 0.001 & 0.002** \\
 &  &  &  & (0.001) & (0.001) & (0.001) \\
-Linkages (West) &  &  &  &  & -0.017 & -0.009 \\
-&  &  &  &  & (0.011) & (0.008) \\
-Electoral autocracy &  &  &  &  &  & 0.100** \\
-&  &  &  &  &  & (0.032) \\
-Electoral democracy &  &  &  &  &  & 0.269*** \\
-&  &  &  &  &  & (0.036) \\
-Liberal democracy &  &  &  &  &  & 0.310*** \\
+Linkages (West) &  &  &  &  & -0.023* & -0.016x \\
+&  &  &  &  & (0.012) & (0.009) \\
+Electoral autocracy &  &  &  &  &  & 0.085** \\
+&  &  &  &  &  & (0.030) \\
+Electoral democracy &  &  &  &  &  & 0.238*** \\
+&  &  &  &  &  & (0.034) \\
+Liberal democracy &  &  &  &  &  & 0.285*** \\
 &  &  &  &  &  & (0.037) \\
-Num.Obs. & 4985 & 4981 & 4501 & 4492 & 4492 & 4492 \\
+Num.Obs. & 5154 & 5150 & 4657 & 4648 & 4648 & 4648 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.877 & 0.877 & 0.887 & 0.887 & 0.887 & 0.915 \\
-R2 Within Adj. & 0.000 & 0.001 & 0.000 & 0.002 & 0.005 & 0.251 \\
+R2 Adj. & 0.874 & 0.874 & 0.882 & 0.883 & 0.883 & 0.907 \\
+R2 Within Adj. & 0.001 & 0.001 & 0.000 & 0.003 & 0.008 & 0.208 \\
 FE: country & X & X & X & X & X & X \\
 FE: year & X & X & X & X & X & X \\
 \bottomrule
@@ -120,7 +121,7 @@ In Model 1.1, I simply regress the independent variable on the dependent. This y
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h1_delta,caption=Models using change in the independent variable,
+label=tab:h1_delta,caption={Models using change in the independent variable},
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -132,31 +133,31 @@ hline{18}={1,2,3,4,5,6,7}{solid, black, 0.05em},
 \toprule
 & Model 1.7 & Model 1.8 & Model 1.9 & Model 1.10 & Model 1.11 & Model 1.12 \\ \midrule %% TinyTableHeader
 \SetCell{bg=Orange} Linkages to China & 
-\SetCell{bg=Orange} 0.172x & 
-\SetCell{bg=Orange} 0.171x & 
-\SetCell{bg=Orange} 0.150 & 
-\SetCell{bg=Orange} 0.161x & 
-\SetCell{bg=Orange} 0.159x & 
-\SetCell{bg=Orange} 0.119 \\
-& (0.091) & (0.090) & (0.092) & (0.093) & (0.092) & (0.073) \\
-log(GDP per capita) &  & 0.010 & -0.001 & 0.006 & 0.010 & -0.009 \\
-&  & (0.021) & (0.021) & (0.023) & (0.024) & (0.020) \\
+\SetCell{bg=Orange} 0.185x & 
+\SetCell{bg=Orange} 0.186x & 
+\SetCell{bg=Orange} 0.176x & 
+\SetCell{bg=Orange} 0.193x & 
+\SetCell{bg=Orange} 0.191x & 
+\SetCell{bg=Orange} 0.136 \\
+& (0.101) & (0.101) & (0.105) & (0.108) & (0.107) & (0.088) \\
+log(GDP per capita) &  & 0.006 & -0.001 & 0.006 & 0.012 & -0.005 \\
+&  & (0.019) & (0.020) & (0.022) & (0.023) & (0.020) \\
 Resource rents &  &  & 0.000 & 0.000 & 0.000 & 0.000 \\
 &  &  & (0.001) & (0.001) & (0.001) & (0.001) \\
-Aid &  &  &  & 0.001 & 0.001 & 0.002* \\
+Aid &  &  &  & 0.001 & 0.001x & 0.002** \\
 &  &  &  & (0.001) & (0.001) & (0.001) \\
-Linkages (West) &  &  &  &  & -0.015 & -0.009 \\
-&  &  &  &  & (0.011) & (0.008) \\
-Electoral autocracy &  &  &  &  &  & 0.100** \\
-&  &  &  &  &  & (0.031) \\
-Electoral democracy &  &  &  &  &  & 0.265*** \\
+Linkages (West) &  &  &  &  & -0.020x & -0.015x \\
+&  &  &  &  & (0.011) & (0.009) \\
+Electoral autocracy &  &  &  &  &  & 0.083** \\
+&  &  &  &  &  & (0.030) \\
+Electoral democracy &  &  &  &  &  & 0.234*** \\
+&  &  &  &  &  & (0.034) \\
+Liberal democracy &  &  &  &  &  & 0.277*** \\
 &  &  &  &  &  & (0.036) \\
-Liberal democracy &  &  &  &  &  & 0.304*** \\
-&  &  &  &  &  & (0.036) \\
-Num.Obs. & 4800 & 4796 & 4323 & 4316 & 4316 & 4316 \\
+Num.Obs. & 4968 & 4964 & 4478 & 4471 & 4471 & 4471 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.881 & 0.880 & 0.889 & 0.890 & 0.890 & 0.917 \\
-R2 Within Adj. & 0.003 & 0.003 & 0.002 & 0.005 & 0.007 & 0.248 \\
+R2 Adj. & 0.877 & 0.877 & 0.884 & 0.885 & 0.886 & 0.908 \\
+R2 Within Adj. & 0.004 & 0.004 & 0.004 & 0.007 & 0.011 & 0.206 \\
 FE: country & X & X & X & X & X & X \\
 FE: year & X & X & X & X & X & X \\
 $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 & 3 \\
@@ -180,7 +181,7 @@ In hypothesis two and three, I set out to study if the linkage effect is regime 
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2,caption=Models with interaction between linkages and regime types,
+label=tab:h2,caption={Models with interaction between linkages and regime types},
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -192,51 +193,51 @@ hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
 \toprule
 & Model 2.1 & Model 2.2 & Model 2.3 & Model 2.4 & Model 2.5 \\ \midrule %% TinyTableHeader
 \SetCell{bg=Orange} Linkages to China & 
-\SetCell{bg=Orange} -0.006 & 
-\SetCell{bg=Orange} 0.012 & 
-\SetCell{bg=Orange} -0.026 & 
-\SetCell{bg=Orange} -0.029 & 
-\SetCell{bg=Orange} -0.041 \\
-& (0.182) & (0.192) & (0.200) & (0.195) & (0.196) \\
-Electoral autocracy & 0.110* & 0.112* & 0.091* & 0.093* & 0.093* \\
-& (0.043) & (0.043) & (0.036) & (0.036) & (0.036) \\
-Electoral democracy & 0.284*** & 0.287*** & 0.264*** & 0.266*** & 0.265*** \\
-& (0.045) & (0.046) & (0.042) & (0.042) & (0.042) \\
-Liberal democracy & 0.339*** & 0.343*** & 0.321*** & 0.324*** & 0.321*** \\
-& (0.046) & (0.047) & (0.043) & (0.043) & (0.042) \\
+\SetCell{bg=Orange} -0.047 & 
+\SetCell{bg=Orange} -0.025 & 
+\SetCell{bg=Orange} -0.096 & 
+\SetCell{bg=Orange} -0.096 & 
+\SetCell{bg=Orange} -0.124 \\
+& (0.218) & (0.230) & (0.256) & (0.249) & (0.252) \\
+Electoral autocracy & 0.094** & 0.097** & 0.071* & 0.075* & 0.074* \\
+& (0.036) & (0.036) & (0.034) & (0.034) & (0.034) \\
+Electoral democracy & 0.261*** & 0.265*** & 0.234*** & 0.237*** & 0.235*** \\
+& (0.039) & (0.040) & (0.039) & (0.039) & (0.039) \\
+Liberal democracy & 0.313*** & 0.318*** & 0.292*** & 0.295*** & 0.288*** \\
+& (0.041) & (0.042) & (0.043) & (0.043) & (0.041) \\
 \SetCell{bg=Orange} China x El.Aut. & 
-\SetCell{bg=Orange} -0.073 & 
-\SetCell{bg=Orange} -0.073 & 
-\SetCell{bg=Orange} 0.064 & 
-\SetCell{bg=Orange} 0.071 & 
-\SetCell{bg=Orange} 0.070 \\
-& (0.263) & (0.266) & (0.266) & (0.257) & (0.256) \\
+\SetCell{bg=Orange} -0.044 & 
+\SetCell{bg=Orange} -0.045 & 
+\SetCell{bg=Orange} 0.113 & 
+\SetCell{bg=Orange} 0.117 & 
+\SetCell{bg=Orange} 0.115 \\
+& (0.290) & (0.294) & (0.312) & (0.301) & (0.299) \\
 \SetCell{bg=Orange} China x El.Dem. & 
-\SetCell{bg=Orange} -0.077 & 
-\SetCell{bg=Orange} -0.078 & 
-\SetCell{bg=Orange} -0.002 & 
-\SetCell{bg=Orange} 0.007 & 
-\SetCell{bg=Orange} 0.010 \\
-& (0.241) & (0.243) & (0.244) & (0.238) & (0.238) \\
+\SetCell{bg=Orange} -0.090 & 
+\SetCell{bg=Orange} -0.092 & 
+\SetCell{bg=Orange} -0.018 & 
+\SetCell{bg=Orange} -0.012 & 
+\SetCell{bg=Orange} -0.004 \\
+& (0.253) & (0.256) & (0.274) & (0.266) & (0.266) \\
 \SetCell{bg=Orange} China x Lib.Dem. & 
-\SetCell{bg=Orange} -0.309 & 
-\SetCell{bg=Orange} -0.333 & 
-\SetCell{bg=Orange} -0.301 & 
-\SetCell{bg=Orange} -0.291 & 
-\SetCell{bg=Orange} -0.256 \\
-& (0.248) & (0.262) & (0.258) & (0.250) & (0.250) \\
-log(GDP per capita) &  & -0.011 & -0.021 & -0.014 & -0.011 \\
-&  & (0.018) & (0.018) & (0.019) & (0.020) \\
+\SetCell{bg=Orange} -0.238 & 
+\SetCell{bg=Orange} -0.268 & 
+\SetCell{bg=Orange} -0.207 & 
+\SetCell{bg=Orange} -0.207 & 
+\SetCell{bg=Orange} -0.126 \\
+& (0.260) & (0.277) & (0.291) & (0.280) & (0.280) \\
+log(GDP per capita) &  & -0.013 & -0.019 & -0.011 & -0.005 \\
+&  & (0.017) & (0.018) & (0.019) & (0.020) \\
 Resource rents &  &  & 0.000 & 0.000 & 0.000 \\
 &  &  & (0.001) & (0.001) & (0.001) \\
-Aid &  &  &  & 0.002* & 0.002* \\
+Aid &  &  &  & 0.002** & 0.002** \\
 &  &  &  & (0.001) & (0.001) \\
-Linkages (West) &  &  &  &  & -0.006 \\
-&  &  &  &  & (0.008) \\
-Num.Obs. & 4985 & 4981 & 4501 & 4492 & 4492 \\
+Linkages (West) &  &  &  &  & -0.014 \\
+&  &  &  &  & (0.009) \\
+Num.Obs. & 5154 & 5150 & 4657 & 4648 & 4648 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.908 & 0.907 & 0.915 & 0.915 & 0.915 \\
-R2 Within Adj. & 0.247 & 0.248 & 0.247 & 0.253 & 0.253 \\
+R2 Adj. & 0.902 & 0.901 & 0.905 & 0.907 & 0.907 \\
+R2 Within Adj. & 0.216 & 0.217 & 0.201 & 0.207 & 0.209 \\
 FE: country & X & X & X & X & X \\
 FE: year & X & X & X & X & X \\
 \bottomrule
@@ -254,7 +255,7 @@ There are some interesting differences from the models being run in Section \ref
 \centering
 \resizebox{\textwidth}{!}{
 \begin{talltblr}[         %% tabularray outer open
-label=tab:h2_delta,caption=Models with interaction between change in linkages and regime type,
+label=tab:h2_delta,caption={Models with interaction between change in linkages and regime type},
 note{}={x p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
@@ -265,52 +266,52 @@ hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
 }                     %% tabularray inner close
 \toprule
 & Model 2.6 & Model 2.7 & Model 2.8 & Model 2.9 & Model 2.10 \\ \midrule %% TinyTableHeader
-\SetCell{bg=Orange} Linkages to China & 
-\SetCell{bg=Orange} 0.056 & 
-\SetCell{bg=Orange} 0.061 & 
-\SetCell{bg=Orange} 0.058 & 
-\SetCell{bg=Orange} 0.108 & 
-\SetCell{bg=Orange} 0.105 \\
-& (0.080) & (0.081) & (0.085) & (0.089) & (0.089) \\
-Electoral autocracy & 0.099** & 0.102** & 0.096** & 0.099** & 0.099** \\
-& (0.035) & (0.035) & (0.031) & (0.031) & (0.031) \\
-Electoral democracy & 0.272*** & 0.275*** & 0.262*** & 0.265*** & 0.264*** \\
-& (0.038) & (0.038) & (0.035) & (0.036) & (0.035) \\
-Liberal democracy & 0.315*** & 0.318*** & 0.304*** & 0.308*** & 0.306*** \\
-& (0.039) & (0.039) & (0.037) & (0.037) & (0.036) \\
+\SetCell{bg=Blue} \textcolor{white}{Linkages to China} & 
+\SetCell{bg=Blue} \textcolor{white}{0.217x} & 
+\SetCell{bg=Blue} \textcolor{white}{0.219x} & 
+\SetCell{bg=Blue} \textcolor{white}{0.242*} & 
+\SetCell{bg=Blue} \textcolor{white}{0.305*} & 
+\SetCell{bg=Blue} \textcolor{white}{0.300*} \\
+& (0.111) & (0.111) & (0.120) & (0.134) & (0.134) \\
+Electoral autocracy & 0.083** & 0.087** & 0.077* & 0.081** & 0.080** \\
+& (0.030) & (0.030) & (0.030) & (0.030) & (0.030) \\
+Electoral democracy & 0.246*** & 0.250*** & 0.229*** & 0.233*** & 0.231*** \\
+& (0.033) & (0.033) & (0.033) & (0.034) & (0.034) \\
+Liberal democracy & 0.289*** & 0.293*** & 0.277*** & 0.281*** & 0.278*** \\
+& (0.035) & (0.035) & (0.037) & (0.037) & (0.036) \\
 \SetCell{bg=Orange} China x El.Aut. & 
-\SetCell{bg=Orange} 0.171 & 
-\SetCell{bg=Orange} 0.168 & 
-\SetCell{bg=Orange} 0.130 & 
-\SetCell{bg=Orange} 0.087 & 
-\SetCell{bg=Orange} 0.086 \\
-& (0.148) & (0.149) & (0.151) & (0.151) & (0.151) \\
-\SetCell{bg=Orange} China x El.Dem. & 
-\SetCell{bg=Orange} -0.076 & 
-\SetCell{bg=Orange} -0.080 & 
-\SetCell{bg=Orange} -0.058 & 
-\SetCell{bg=Orange} -0.124 & 
-\SetCell{bg=Orange} -0.116 \\
-& (0.131) & (0.131) & (0.132) & (0.133) & (0.134) \\
+\SetCell{bg=Orange} -0.056 & 
+\SetCell{bg=Orange} -0.057 & 
+\SetCell{bg=Orange} -0.095 & 
+\SetCell{bg=Orange} -0.146 & 
+\SetCell{bg=Orange} -0.147 \\
+& (0.179) & (0.179) & (0.184) & (0.191) & (0.190) \\
+\SetCell{bg=Blue} \textcolor{white}{China x El.Dem.} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.294*} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.292*} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.303*} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.380*} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.369*} \\
+& (0.135) & (0.136) & (0.137) & (0.148) & (0.149) \\
 \SetCell{bg=Blue} \textcolor{white}{China x Lib.Dem.} & 
-\SetCell{bg=Blue} \textcolor{white}{-0.219x} & 
-\SetCell{bg=Blue} \textcolor{white}{-0.222x} & 
-\SetCell{bg=Blue} \textcolor{white}{-0.186x} & 
-\SetCell{bg=Blue} \textcolor{white}{-0.256*} & 
-\SetCell{bg=Blue} \textcolor{white}{-0.226*} \\
-& (0.114) & (0.115) & (0.110) & (0.112) & (0.112) \\
-log(GDP per capita) &  & -0.011 & -0.020 & -0.012 & -0.010 \\
-&  & (0.018) & (0.018) & (0.020) & (0.020) \\
+\SetCell{bg=Blue} \textcolor{white}{-0.370**} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.373**} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.364**} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.456**} & 
+\SetCell{bg=Blue} \textcolor{white}{-0.406**} \\
+& (0.134) & (0.134) & (0.134) & (0.144) & (0.146) \\
+log(GDP per capita) &  & -0.013 & -0.018 & -0.009 & -0.005 \\
+&  & (0.017) & (0.018) & (0.019) & (0.020) \\
 Resource rents &  &  & 0.000 & 0.000 & 0.000 \\
 &  &  & (0.001) & (0.001) & (0.001) \\
-Aid &  &  &  & 0.002* & 0.002* \\
+Aid &  &  &  & 0.002** & 0.002** \\
 &  &  &  & (0.001) & (0.001) \\
-Linkages (West) &  &  &  &  & -0.007 \\
-&  &  &  &  & (0.008) \\
-Num.Obs. & 4800 & 4796 & 4323 & 4316 & 4316 \\
+Linkages (West) &  &  &  &  & -0.012 \\
+&  &  &  &  & (0.009) \\
+Num.Obs. & 4968 & 4964 & 4478 & 4471 & 4471 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.909 & 0.909 & 0.916 & 0.917 & 0.917 \\
-R2 Within Adj. & 0.243 & 0.244 & 0.243 & 0.249 & 0.249 \\
+R2 Adj. & 0.903 & 0.903 & 0.907 & 0.909 & 0.909 \\
+R2 Within Adj. & 0.215 & 0.217 & 0.199 & 0.209 & 0.210 \\
 FE: country & X & X & X & X & X \\
 FE: year & X & X & X & X & X \\
 $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 \\
