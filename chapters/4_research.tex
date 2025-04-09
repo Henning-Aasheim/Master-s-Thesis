@@ -136,7 +136,7 @@ Political
 } % End resizebox
 \end{table}
 
-\section{Control Variables}
+\section{Control Variables} \label{control}
 
 Since I am using country and time fixed effects, I have to include control variables that changes over time and country. 
 
@@ -222,20 +222,22 @@ leaving us with:
 We do the same for time as well, however doing them together is a more complicated process and I use an R-package called \textit{fixest} \citep{berge_efficient_2018} to achieve this. This is, however, the basic form of the process, where I try to remove any variable that is fixed for the units or time periods.
 
 \subsection{The models}
-Fixed effects solves the problem of variables that are fixed over time and country influences the results. The last hurdle is to remove effects caused by variables that varies over both time and units. To do this I include the control variables described above. Including these should remove any spurious effects that might cause bias when estimating the relationship between linkages to China and freedom of expression. The final models is represented in the equations below, where Equation \ref{equ:h1} represent a model regressing the dependent and independent variables directly on each other, and \ref{equ:h1_delta} represents a model where the dependent variable is modelled on change in the independent variable.
+Fixed effects solves the problem of variables that are fixed over time and country influences the results. The last hurdle is to remove effects caused by variables that varies over both time and units. To do this I include the control variables described above. Including these should remove any spurious effects that might cause bias when estimating the relationship between linkages to China and freedom of expression. The final models is represented in the equations below, where Equation \ref{equ:h1} represent a model regressing the dependent and independent variables directly on each other:
 \begin{multline} \label{equ:h1}
     freedom_{it+1} = \beta_1  linkages_{it} + \beta_2 log(gdppc)_{it} + \beta_3 rents_{it} + \\\beta_4aid_{it} + \beta_5 west_{it} + \beta_6  factor(regime)_{it} + u_{it}
 \end{multline}
+and \ref{equ:h1_delta} represents a model where the dependent variable is modelled on change in the independent variable:
 \begin{multline} \label{equ:h1_delta}
     freedom_{it+1} = \beta_1 \Delta linkages_{it} + \beta_2 log(gdppc)_{it} + \beta_3rents_{it} + \\\beta_4aid_{it} + \beta_5west_{it} + \beta_6 factor(regime)_{it} + u_{it}
 \end{multline}
 In Equation \ref{equ:h1} the one year lagged freedom of expression variable is a function of  linkages to China, the log-transformed GDP per capita, rents, aid, linkages to the west, regime type, and an error term. Equation \ref{equ:h1_delta}
 is almost the same as Equation \ref{equ:h1}, however, the variable for linkages to China now measures the rolling three-year difference in FBIC-score. 
 
-When working with hypotheses two and three, we need a slightly different models from the two above. Instead of including the regime variable as an independent term, we furnish the models with an interaction term between the linkage variable and the factorised regime variable. This makes it possible to see the effect of linkages on different regime types. The interaction models are shown in Equations \ref{equ:h2} and \ref{equ:h2_delta}:
+When working with hypotheses two, we need two slightly different models from the ones above. Instead of including the regime variable as an independent term, we furnish the models with an interaction term between the linkage variable and the factorised regime variable. This makes it possible to see the effect of linkages on different regime types. The interaction models are shown in Equations \ref{equ:h2}:
 \begin{multline} \label{equ:h2}
     freedom_{it+1} = \beta_1 linkages_{it} + \beta_2 factor(regime)_{it} + \beta_2 log(gdppc)_{it} + \\ \beta_3 rents_{it} + \beta_4 aid_{it} + \beta_5 west_{it} + \beta_6 (linkages * factor(regime)) + u_{it}
 \end{multline}
+and \ref{equ:h2_delta}:
 \begin{multline} \label{equ:h2_delta}
     freedom_{it+1} = \beta_1 \Delta linkages_{it} + \beta_2 factor(regime)_{it} + \beta_2 log(gdppc)_{it} + \\ \beta_3 rents_{it} + \beta_4 aid_{it} + \beta_5 west_{it} + \beta_6 (\Delta linkages * factor(regime)) + u_{it}
 \end{multline}
