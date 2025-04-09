@@ -1,7 +1,7 @@
 \lettrine{A}{ppendix A includes extra tables} for analysing the robustness of the results. It is therefore strongly connected to the penultimate section of the analysis chapter (Section \ref{sec:robust})
 
 \section{Time lag}
-In this section I present four tables with different time lags, each for one of the four models included in Chapter \ref{chp:analysis}. The two first are models looking at hypothesis one, with the first being the simple model from Equation \ref{equ:h1}, while the second uses the change in linkages instead of using linkages directly (Equation \ref{equ:h1_delta}). I run the models for time lags between one and five years, using the most complex model (Models 1.6 and 1.12). The two next models runs the same models as above for the second hypothesis (Equations \ref{equ:h2} and \ref{equ:h2_delta}). 
+In this section I present four tables with different time lags, each for one of the four models included in Chapter \ref{chp:analysis}. The two first are models looking at hypothesis one, with the first being the simple model from Equation \ref{equ:h1}, while the second uses the change in linkages instead of using linkages directly (Equation \ref{equ:h1_delta}). I run the models for time lags for two, four, six, eight, and ten years, using the most complex model (Models 1.6 and 1.12). The two next models runs the same models as above for the second hypothesis (Equations \ref{equ:h2} and \ref{equ:h2_delta}). 
 
 \begin{table}[H]
 \centering
@@ -18,29 +18,29 @@ hline{18}={1,2,3,4,5,6}{solid, black, 0.05em},
 }                     %% tabularray inner close
 \toprule
 & Model A.1.1 & Model A.1.2 & Model A.1.3 & Model A.1.4 & Model A.1.5 \\ \midrule %% TinyTableHeader
-Linkages to China & -0.058 & -0.088 & -0.124 & -0.188 & -0.240 \\
-& (0.111) & (0.118) & (0.127) & (0.137) & (0.147) \\
-log(GDP per capita) & -0.003 & 0.003 & 0.007 & 0.013 & 0.017 \\
-& (0.020) & (0.020) & (0.021) & (0.022) & (0.022) \\
+Linkages to China & -0.088 & -0.188 & -0.278x & -0.318x & -0.272 \\
+& (0.118) & (0.137) & (0.156) & (0.175) & (0.184) \\
+log(GDP per capita) & 0.003 & 0.013 & 0.017 & 0.012 & 0.001 \\
+& (0.020) & (0.022) & (0.021) & (0.017) & (0.016) \\
 Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Aid & 0.002** & 0.002* & 0.001* & 0.001 & 0.001 \\
+Aid & 0.002* & 0.001 & 0.001 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Linkages (West) & -0.016x & -0.020* & -0.023* & -0.027* & -0.030** \\
-& (0.009) & (0.009) & (0.010) & (0.011) & (0.011) \\
-Electoral autocracy & 0.085** & 0.063* & 0.044 & 0.028 & 0.015 \\
-& (0.030) & (0.028) & (0.027) & (0.026) & (0.025) \\
-Electoral democracy & 0.238*** & 0.192*** & 0.152*** & 0.112*** & 0.083** \\
-& (0.034) & (0.032) & (0.031) & (0.029) & (0.028) \\
-Liberal democracy & 0.285*** & 0.241*** & 0.202*** & 0.165*** & 0.137*** \\
-& (0.037) & (0.035) & (0.035) & (0.034) & (0.035) \\
-Num.Obs. & 4648 & 4648 & 4648 & 4484 & 4317 \\
+Linkages (West) & -0.020* & -0.027* & -0.031* & -0.034* & -0.035* \\
+& (0.009) & (0.011) & (0.012) & (0.013) & (0.014) \\
+Electoral autocracy & 0.063* & 0.028 & 0.008 & 0.002 & -0.015 \\
+& (0.028) & (0.026) & (0.025) & (0.024) & (0.026) \\
+Electoral democracy & 0.192*** & 0.112*** & 0.061* & 0.037 & 0.017 \\
+& (0.032) & (0.029) & (0.027) & (0.026) & (0.029) \\
+Liberal democracy & 0.241*** & 0.165*** & 0.112** & 0.081* & 0.059x \\
+& (0.035) & (0.034) & (0.035) & (0.034) & (0.034) \\
+Num.Obs. & 4648 & 4484 & 4149 & 3812 & 3473 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.907 & 0.899 & 0.894 & 0.894 & 0.895 \\
-R2 Within Adj. & 0.208 & 0.149 & 0.105 & 0.073 & 0.055 \\
+R2 Adj. & 0.899 & 0.894 & 0.897 & 0.899 & 0.903 \\
+R2 Within Adj. & 0.149 & 0.073 & 0.042 & 0.030 & 0.026 \\
 FE: country & X & X & X & X & X \\
 FE: year & X & X & X & X & X \\
-Lead freedom & 1 & 2 & 3 & 4 & 5 \\
+Lead freedom & 2 & 4 & 6 & 8 & 10 \\
 \bottomrule
 \end{talltblr}
 }
@@ -61,29 +61,29 @@ hline{18}={1,2,3,4,5,6}{solid, black, 0.05em},
 }                     %% tabularray inner close
 \toprule
 & Model A.1.6 & Model A.1.7 & Model A.1.8 & Model A.1.9 & Model A.1.10 \\ \midrule %% TinyTableHeader
-Linkages to China & 0.136 & 0.170x & 0.167x & 0.125 & 0.070 \\
-& (0.088) & (0.092) & (0.091) & (0.093) & (0.089) \\
-log(GDP per capita) & -0.005 & -0.001 & 0.002 & 0.005 & 0.007 \\
-& (0.020) & (0.020) & (0.020) & (0.021) & (0.021) \\
+Linkages to China & 0.170x & 0.125 & 0.013 & -0.030 & -0.021 \\
+& (0.092) & (0.093) & (0.086) & (0.104) & (0.115) \\
+log(GDP per capita) & -0.001 & 0.005 & 0.006 & 0.004 & -0.006 \\
+& (0.020) & (0.021) & (0.020) & (0.019) & (0.018) \\
 Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Aid & 0.002** & 0.002** & 0.001* & 0.001 & 0.001 \\
+Aid & 0.002** & 0.001 & 0.001 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Linkages (West) & -0.015x & -0.018x & -0.020* & -0.022* & -0.025* \\
-& (0.009) & (0.009) & (0.010) & (0.010) & (0.011) \\
-Electoral autocracy & 0.083** & 0.060* & 0.042 & 0.026 & 0.013 \\
-& (0.030) & (0.028) & (0.026) & (0.025) & (0.024) \\
-Electoral democracy & 0.234*** & 0.187*** & 0.148*** & 0.110*** & 0.081** \\
-& (0.034) & (0.031) & (0.030) & (0.029) & (0.028) \\
-Liberal democracy & 0.277*** & 0.233*** & 0.195*** & 0.160*** & 0.134*** \\
-& (0.036) & (0.035) & (0.034) & (0.034) & (0.034) \\
-Num.Obs. & 4471 & 4471 & 4471 & 4307 & 4140 \\
+Linkages (West) & -0.018x & -0.022* & -0.026* & -0.029* & -0.031* \\
+& (0.009) & (0.010) & (0.012) & (0.013) & (0.013) \\
+Electoral autocracy & 0.060* & 0.026 & 0.007 & 0.001 & -0.016 \\
+& (0.028) & (0.025) & (0.024) & (0.022) & (0.025) \\
+Electoral democracy & 0.187*** & 0.110*** & 0.061* & 0.037 & 0.017 \\
+& (0.031) & (0.029) & (0.027) & (0.026) & (0.029) \\
+Liberal democracy & 0.233*** & 0.160*** & 0.112** & 0.079* & 0.058x \\
+& (0.035) & (0.034) & (0.035) & (0.034) & (0.034) \\
+Num.Obs. & 4471 & 4307 & 3972 & 3635 & 3296 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.908 & 0.901 & 0.896 & 0.894 & 0.895 \\
-R2 Within Adj. & 0.206 & 0.147 & 0.103 & 0.068 & 0.047 \\
+R2 Adj. & 0.901 & 0.894 & 0.897 & 0.899 & 0.903 \\
+R2 Within Adj. & 0.147 & 0.068 & 0.033 & 0.020 & 0.020 \\
 FE: country & X & X & X & X & X \\
 FE: year & X & X & X & X & X \\
-Lead freedom & 1 & 2 & 3 & 4 & 5 \\
+Lead freedom & 2 & 4 & 6 & 8 & 10 \\
 $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 \\
 \bottomrule
 \end{talltblr}
@@ -105,35 +105,35 @@ hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
 }                     %% tabularray inner close
 \toprule
 & Model A.1.11 & Model A.1.12 & Model A.1.13 & Model A.1.14 & Model A.1.15 \\ \midrule %% TinyTableHeader
-Linkages to China & -0.124 & -0.127 & -0.127 & -0.160 & -0.189 \\
-& (0.252) & (0.249) & (0.246) & (0.243) & (0.246) \\
-Electoral autocracy & 0.074* & 0.054x & 0.039 & 0.026 & 0.017 \\
-& (0.034) & (0.032) & (0.032) & (0.032) & (0.032) \\
-Electoral democracy & 0.235*** & 0.194*** & 0.159*** & 0.123*** & 0.096** \\
-& (0.039) & (0.037) & (0.037) & (0.036) & (0.035) \\
-Liberal democracy & 0.288*** & 0.245*** & 0.205*** & 0.168*** & 0.139*** \\
-& (0.041) & (0.040) & (0.040) & (0.040) & (0.040) \\
-China x El.Aut. & 0.115 & 0.085 & 0.041 & 0.002 & -0.033 \\
-& (0.299) & (0.279) & (0.256) & (0.233) & (0.221) \\
-China x El.Dem. & -0.004 & -0.069 & -0.137 & -0.187 & -0.209 \\
-& (0.266) & (0.254) & (0.243) & (0.236) & (0.240) \\
-China x Lib.Dem. & -0.126 & -0.092 & -0.054 & -0.011 & 0.029 \\
-& (0.280) & (0.274) & (0.270) & (0.270) & (0.275) \\
-log(GDP per capita) & -0.005 & 0.001 & 0.006 & 0.013 & 0.017 \\
-& (0.020) & (0.020) & (0.021) & (0.022) & (0.022) \\
-Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
+Linkages to China & -0.127 & -0.160 & -0.176 & -0.138 & 0.123 \\
+& (0.249) & (0.243) & (0.238) & (0.201) & (0.206) \\
+Electoral autocracy & 0.054x & 0.026 & 0.016 & 0.016 & 0.011 \\
+& (0.032) & (0.032) & (0.031) & (0.030) & (0.030) \\
+Electoral democracy & 0.194*** & 0.123*** & 0.078* & 0.058x & 0.056 \\
+& (0.037) & (0.036) & (0.035) & (0.034) & (0.035) \\
+Liberal democracy & 0.245*** & 0.168*** & 0.116** & 0.088* & 0.081* \\
+& (0.040) & (0.040) & (0.040) & (0.039) & (0.037) \\
+China x El.Aut. & 0.085 & 0.002 & -0.103 & -0.206 & -0.437* \\
+& (0.279) & (0.233) & (0.202) & (0.150) & (0.198) \\
+China x El.Dem. & -0.069 & -0.187 & -0.250 & -0.318 & -0.667* \\
+& (0.254) & (0.236) & (0.242) & (0.241) & (0.289) \\
+China x Lib.Dem. & -0.092 & -0.011 & 0.018 & -0.026 & -0.229 \\
+& (0.274) & (0.270) & (0.269) & (0.242) & (0.257) \\
+log(GDP per capita) & 0.001 & 0.013 & 0.018 & 0.013 & 0.003 \\
+& (0.020) & (0.022) & (0.021) & (0.018) & (0.017) \\
+Resource rents & 0.000 & 0.000 & 0.001 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Aid & 0.002** & 0.002* & 0.001* & 0.001 & 0.001 \\
+Aid & 0.002* & 0.001 & 0.001 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Linkages (West) & -0.014 & -0.019* & -0.022* & -0.027* & -0.030** \\
-& (0.009) & (0.009) & (0.010) & (0.010) & (0.011) \\
-Num.Obs. & 4648 & 4648 & 4648 & 4484 & 4317 \\
+Linkages (West) & -0.019* & -0.027* & -0.032** & -0.036** & -0.037** \\
+& (0.009) & (0.010) & (0.012) & (0.013) & (0.014) \\
+Num.Obs. & 4648 & 4484 & 4149 & 3812 & 3473 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.907 & 0.899 & 0.894 & 0.894 & 0.895 \\
-R2 Within Adj. & 0.209 & 0.150 & 0.106 & 0.074 & 0.056 \\
+R2 Adj. & 0.899 & 0.894 & 0.897 & 0.899 & 0.905 \\
+R2 Within Adj. & 0.150 & 0.074 & 0.044 & 0.033 & 0.038 \\
 FE: country & X & X & X & X & X \\
 FE: year & X & X & X & X & X \\
-Lead freedom & 1 & 2 & 3 & 4 & 5 \\
+Lead freedom & 2 & 4 & 6 & 8 & 10 \\
 \bottomrule
 \end{talltblr}
 }
@@ -154,35 +154,35 @@ hline{24}={1,2,3,4,5,6}{solid, black, 0.05em},
 }                     %% tabularray inner close
 \toprule
 & Model A.1.16 & Model A.1.17 & Model A.1.18 & Model A.1.19 & Model A.1.20 \\ \midrule %% TinyTableHeader
-Linkages to China & 0.300* & 0.338* & 0.334* & 0.341x & 0.344x \\
-& (0.134) & (0.147) & (0.163) & (0.185) & (0.202) \\
-Electoral autocracy & 0.080** & 0.058* & 0.039 & 0.022 & 0.010 \\
-& (0.030) & (0.028) & (0.026) & (0.025) & (0.024) \\
-Electoral democracy & 0.231*** & 0.185*** & 0.145*** & 0.107*** & 0.078** \\
-& (0.034) & (0.031) & (0.030) & (0.028) & (0.028) \\
-Liberal democracy & 0.278*** & 0.234*** & 0.197*** & 0.162*** & 0.135*** \\
-& (0.036) & (0.034) & (0.034) & (0.034) & (0.034) \\
-China x El.Aut. & -0.147 & -0.127 & -0.112 & -0.178 & -0.279 \\
-& (0.190) & (0.208) & (0.215) & (0.222) & (0.230) \\
-China x El.Dem. & -0.369* & -0.432** & -0.467** & -0.547** & -0.601** \\
-& (0.149) & (0.164) & (0.178) & (0.193) & (0.208) \\
-China x Lib.Dem. & -0.406** & -0.442** & -0.444* & -0.454* & -0.449* \\
-& (0.146) & (0.158) & (0.171) & (0.186) & (0.198) \\
-log(GDP per capita) & -0.005 & -0.001 & 0.002 & 0.005 & 0.007 \\
-& (0.020) & (0.020) & (0.020) & (0.021) & (0.021) \\
+Linkages to China & 0.338* & 0.341x & 0.271 & 0.191 & 0.216 \\
+& (0.147) & (0.185) & (0.201) & (0.210) & (0.212) \\
+Electoral autocracy & 0.058* & 0.022 & 0.003 & -0.003 & -0.022 \\
+& (0.028) & (0.025) & (0.024) & (0.022) & (0.024) \\
+Electoral democracy & 0.185*** & 0.107*** & 0.058* & 0.033 & 0.013 \\
+& (0.031) & (0.028) & (0.027) & (0.025) & (0.028) \\
+Liberal democracy & 0.234*** & 0.162*** & 0.114** & 0.080* & 0.059x \\
+& (0.034) & (0.034) & (0.034) & (0.034) & (0.034) \\
+China x El.Aut. & -0.127 & -0.178 & -0.270 & -0.243 & -0.272 \\
+& (0.208) & (0.222) & (0.217) & (0.200) & (0.186) \\
+China x El.Dem. & -0.432** & -0.547** & -0.561** & -0.468* & -0.487* \\
+& (0.164) & (0.193) & (0.208) & (0.221) & (0.221) \\
+China x Lib.Dem. & -0.442** & -0.454* & -0.400* & -0.344x & -0.311x \\
+& (0.158) & (0.186) & (0.196) & (0.197) & (0.185) \\
+log(GDP per capita) & -0.001 & 0.005 & 0.006 & 0.004 & -0.005 \\
+& (0.020) & (0.021) & (0.020) & (0.019) & (0.018) \\
 Resource rents & 0.000 & 0.000 & 0.000 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Aid & 0.002** & 0.002** & 0.002* & 0.001x & 0.001 \\
+Aid & 0.002** & 0.001x & 0.001 & 0.000 & 0.000 \\
 & (0.001) & (0.001) & (0.001) & (0.001) & (0.001) \\
-Linkages (West) & -0.012 & -0.015x & -0.017x & -0.019x & -0.022* \\
-& (0.009) & (0.009) & (0.010) & (0.010) & (0.011) \\
-Num.Obs. & 4471 & 4471 & 4471 & 4307 & 4140 \\
+Linkages (West) & -0.015x & -0.019x & -0.024* & -0.027* & -0.030* \\
+& (0.009) & (0.010) & (0.011) & (0.012) & (0.013) \\
+Num.Obs. & 4471 & 4307 & 3972 & 3635 & 3296 \\
 Std.Errors & by: country & by: country & by: country & by: country & by: country \\
-R2 Adj. & 0.909 & 0.901 & 0.896 & 0.895 & 0.896 \\
-R2 Within Adj. & 0.210 & 0.152 & 0.109 & 0.076 & 0.057 \\
+R2 Adj. & 0.901 & 0.895 & 0.898 & 0.899 & 0.904 \\
+R2 Within Adj. & 0.152 & 0.076 & 0.042 & 0.026 & 0.027 \\
 FE: country & X & X & X & X & X \\
 FE: year & X & X & X & X & X \\
-Lead freedom & 1 & 2 & 3 & 4 & 5 \\
+Lead freedom & 2 & 4 & 6 & 8 & 10 \\
 $\Delta$ Years Linkages & 3 & 3 & 3 & 3 & 3 \\
 \bottomrule
 \end{talltblr}
