@@ -167,9 +167,9 @@ column{2,3,4,5,6,7,8}={}{halign=r,},
 }                     %% tabularray inner close
 \toprule
 & N & Mean & Median & SD & Min & Max & Density \\ \midrule %% TinyTableHeader
-freedom & 5368 & 0.66 & 0.75 & 0.29 & 0.01 & 0.99 & \includegraphics[height=1em]{tinytable_assets/idkw3ss7dtaehv6mshzwwl.png} \\
+Freedom & 5368 & 0.66 & 0.75 & 0.29 & 0.01 & 0.99 & \includegraphics[height=1em]{tinytable_assets/idkw3ss7dtaehv6mshzwwl.png} \\
 Linkages to China & 5154 & 0.08 & 0.05 & 0.08 & 0.00 & 0.48 & \includegraphics[height=1em]{tinytable_assets/idgbl0sn5x5im94irfzhyq.png} \\
-Change linkages & 4968 & 0.00 & 0.01 & 0.04 & -0.43 & 0.24 & \includegraphics[height=1em]{tinytable_assets/idoi69zs1tqy05nn3tun6f.png} \\
+Change in linkages & 4968 & 0.00 & 0.01 & 0.04 & -0.43 & 0.24 & \includegraphics[height=1em]{tinytable_assets/idoi69zs1tqy05nn3tun6f.png} \\
 Regime & 5368 & 1.59 & 2.00 & 1.00 & 0.00 & 3.00 & \includegraphics[height=1em]{tinytable_assets/idtplecxtx0acvwxi990hv.png} \\
 Linkages to the West & 5154 & 1.08 & 0.68 & 1.08 & 0.03 & 5.32 & \includegraphics[height=1em]{tinytable_assets/id0blqnye1aky5vllx8gn6.png} \\
 GDP per capita & 5190 & 8.20 & 8.16 & 1.58 & 4.37 & 11.81 & \includegraphics[height=1em]{tinytable_assets/iduvca3az1vb55iagqjao4.png} \\
@@ -201,7 +201,7 @@ The last type of variation that must be controlled for is variables that changes
 \subsection{Fixed-effects}
 There are many challenges to establish a causal link between two variables. Of course, we would in theory like to follow a process in detail at every stage for every unit. This requires resources of a scale that is next to impossible to attain. However, with data on the results and a solid theoretical foundation, it is possible to say something about complex phenomenon. But how is this to be achieved?
 
-I start by calculating the 3 -year difference in FBIC-score. This is done \textit{in lieu} of having access to a treatment and control group with and without linkages to China. In this case we have a pseudo-treatment group with increase in FBIC-score and a pseudo-control group without increase or with decrease. It is important to note that this is nothing  mnemonic; far removed from a laboratory---or indeed a natural experiment. In addition, I lag the dependent variable one year to allow the linkages time to have an effect and to remove any lingering doubt of reversed causality.
+I start by calculating the 3 -year difference in FBIC-score. This is done \textit{in lieu} of having access to a treatment and control group with and without linkages to China. In this case we have a pseudo-treatment group with increase in FBIC-score and a pseudo-control group without increase or with decrease. It is important to note that this is nothing  mnemonic; far removed from a laboratory---or indeed a natural experiment. In addition, I lead the dependent variable one year to allow the linkages time to have an effect and to remove any lingering doubt of reversed causality. The reason I use lead on my dependent variable instead of lagging my independent variables, is because I have an additional year of observations on my dependent variable. This means that I do not lose any efficiency when leading the dependent variable, which would have happened if I lagged my independent variables.
 
 To resolve the omitted variable problem, I have decided to use a method called fixed-effects. In very simple terms, fixed-effects is a way to run Ordinary Least Squares (OLS) regression models which accounts for certain effects. These effects must be constant over a certain dimension, e.g., constant for each country or time period. This is achieved by working with the within variation, rather than the absolute variation. This is done by the following procedure (\citeauthor{huntington-klein_effect_2022} \citeyear{huntington-klein_effect_2022}; \citeauthor{wooldridge_econometric_2010} \citeyear{wooldridge_econometric_2010}, pp. 301-302). For all variables we subtract the mean of the time or unit grouped variables from the individual observations. This is described below.
 
@@ -223,7 +223,7 @@ leaving us with:
 We do the same for time as well, however doing them together is a more complicated process and I use an R-package called \textit{fixest} \citep{berge_efficient_2018} to achieve this. This is, however, the basic form of the process, where I try to remove any variable that is fixed for the units or time periods.
 
 \subsection{The models}
-Fixed effects solves the problem of variables that are fixed over time and country influences the results. The last hurdle is to remove effects caused by variables that varies over both time and units. To do this I include the control variables described above. Including these should remove any spurious effects that might cause bias when estimating the relationship between linkages to China and freedom of expression. The final models is represented in the equations below, where Equation \ref{equ:h1} represent a model regressing the dependent and independent variables directly on each other:
+Fixed effects solves the problem of variables that are fixed over time and country influences the results. The last hurdle is to remove effects caused by variables that varies over both time and units. To do this I include the controls for GDP per capita, natural resources rents, aid, and linkages to the West. Including these should remove any spurious effects that might cause bias when estimating the relationship between linkages to China and freedom of expression. The final models is represented in the equations below, where Equation \ref{equ:h1} represent a model regressing the dependent and independent variables directly on each other:
 \begin{multline} \label{equ:h1}
     freedom_{it+1} = \beta_1  linkages_{it} + \beta_2 log(gdppc)_{it} + \beta_3 rents_{it} + \\\beta_4aid_{it} + \beta_5 west_{it} + \beta_6  factor(regime)_{it} + u_{it}
 \end{multline}
@@ -231,7 +231,7 @@ and \ref{equ:h1_delta} represents a model where the dependent variable is modell
 \begin{multline} \label{equ:h1_delta}
     freedom_{it+1} = \beta_1 \Delta linkages_{it} + \beta_2 log(gdppc)_{it} + \beta_3rents_{it} + \\\beta_4aid_{it} + \beta_5west_{it} + \beta_6 factor(regime)_{it} + u_{it}
 \end{multline}
-In Equation \ref{equ:h1} the one year lagged freedom of expression variable is a function of  linkages to China, the log-transformed GDP per capita, rents, aid, linkages to the west, regime type, and an error term. Equation \ref{equ:h1_delta}
+In Equation \ref{equ:h1} the freedom of expression variable with a one year lead is a function of  linkages to China, the log-transformed GDP per capita, rents, aid, linkages to the west, regime type, and an error term. Equation \ref{equ:h1_delta}
 is almost the same as Equation \ref{equ:h1}, however, the variable for linkages to China now measures the rolling three-year difference in FBIC-score. 
 
 When working with hypotheses two, we need two slightly different models from the ones above. Instead of including the regime variable as an independent term, we furnish the models with an interaction term between the linkage variable and the factorised regime variable. This makes it possible to see the effect of linkages on different regime types. The interaction models are shown in Equations \ref{equ:h2}:
