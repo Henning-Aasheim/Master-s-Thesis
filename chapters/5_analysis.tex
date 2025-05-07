@@ -7,6 +7,7 @@ I start this chapter by giving a few examples of how linkages to China and freed
 \centering
 \caption{Changes in freedom of expression and linkages to China}
 \label{tab:change}
+\vspace{0.5em}
 \begin{tabular}{lLp{15mm}lL}
 \toprule
 Country & \multicolumn{1}{c}{Freedom} & & Country & \multicolumn{1}{c}{Linkage} \\
@@ -124,7 +125,7 @@ FE: year & X & X & X & X & X & X \\
 
 Table \ref{tab:h1} includes six different versions of Model 1, estimating the effect of linkages to China on freedom of expression. Model 1.6, the most complex, is equivalent to Equation \ref{equ:h1} above. Model 1.1 regress linkages to China directly on freedom of expression without including any control variables. I then gradually include the five control variables described in Section \ref{control}. The first control variable I include is the logged GDP per capita variable (Model 1.2), the second is total natural resources rents as a percentage of GDP (Model 1.3), the third is Official Development Assistance, better known as aid, which is measured as per cent of GNI (Model 1.4), the fifth is linkages to the West, an aggregate of linkages to Western countries (Model 1.5), and the final model introduces the regime control variable, a factor variable of four levels, with closed autocracies being the reference value (Model 1.6), giving us the full model.  I start with 5,154 observations, and in the last model I end up with 4,648, losing 506 observation through missingness on the control variables. The biggest loss of observations happens when including the total natural resources rents variable in model 1.3, because this variable only has data up until 2021. All the models are all using country and time fixed effects, with the freedom of expression scores being lead by one year to exclude reversed causation. 
 
-The highlighted row labelled Linkages to China shows us the main effect we are after, namely the effect of linkages to China on freedom of expression. The sign of this coefficient is negative in all cases, indicating that linkages to China have a negative effect on freedom of expression. However we see that the effect sizes are small and the standard errors are large so we cannot be confident in this relationship. Other than this, there are a few more things to note. First, the coefficient for GDP per capita is non-significant and small, probably indicating that most of the variation in this variable is controlled for by using fixed effects. Second, that aid is significant only when also controlling for regime type. Third, that linkages to the West is negative and statistically significant in Model 1.5, but the significance disappears when controlling for regime type. This is very surprising in light of earlier studies \citep{levitsky_linkage_2006}, however, I will explore this further below in the discussion section. And fourth, that regime type is always positive and statistically significant. This latter observation is unsurprising as one, all the regime types are more democratic than the reference regime type which is closed autocracy, and two, because the regime variable is partially based on the freedom of expression variable.
+The highlighted row labelled Linkages to China shows us the main effect we are after, namely the effect of linkages to China on freedom of expression. The sign of this coefficient is negative in all cases, indicating that linkages to China have a negative effect on freedom of expression. However we see that the effect sizes are small and the standard errors are large so we cannot be confident in this relationship. Other than this, there are a few more things to note. First, the coefficient for GDP per capita is non-significant and small, probably indicating that most of the variation in this variable is controlled for by using fixed effects. Second, that aid is significant only when also controlling for regime type. Third, that linkages to the West is negative and statistically significant in Model 1.5, but the significance disappears when controlling for regime type. This is very surprising in light of earlier studies \citep{levitsky_linkage_2006}, however, I will explore this further below in the discussion chapter. And fourth, that regime type is always positive and statistically significant. This latter observation is unsurprising as one, all the regime types are more democratic than the reference regime type which is closed autocracy, and two, because the regime variable is partially based on the freedom of expression variable.
 
 It can be clearly seen in Table \ref{tab:h1} that linkages to China does not have a direct impact on freedom of expression scores. While the sign of the linkage variable is indeed negative, the standard error is quite large, being more than twice the size of the estimated effect in all models.
 
@@ -133,9 +134,7 @@ I also test how the model reacts when using different time leads. I do this by u
 
 The size of the coefficient for linkages to China increases up until an eight year lag, before it decreases again. The sign is negative and the effect becomes somewhat sizeable. However the standard error is still large and never reaches the five per cent threshold of statistical significance, meaning that we should consider it implausible that linkages to China have an effect on freedom of expression. 
 
-What is more interesting to see is that linkages to the West is negative and statistically significant for all leads. It means that if a country increases its linkages to the West, the model predicts that freedom of expression decreases, however, the effect seems to be small. A difference of one standard deviation on this variable is about one, meaning that this coefficient shows us what a common change would look like, almost a tenth of the standard deviation for the freedom of expression variable.
-
-We should also note that the regime factor variables all lose significance and coefficient size. This is expected as the further removed from the freedom of expression score in time, the less they should be able to predict it. 
+What is more interesting to see is that linkages to the West is negative and statistically significant for all leads. It means that if a country increases its linkages to the West, the model predicts that freedom of expression decreases. We should also note that the regime factor variables all lose significance and coefficient size. This is expected as the further removed from the freedom of expression score in time, the less they should be able to predict it. 
 
 \begin{table}[H]
 \centering
@@ -272,7 +271,7 @@ As for hypothesis one, I examine the results for the most complex model from Tab
 
 This result might at first seem to partially confirm hypothesis one and confirm hypothesis two. Hypothesis one is partially confirmed because linkages to China has an effect on freedom of expression, contingent on regime type. The second hypothesis is confirmed since the effect is much larger, and only significant, for hybrid regimes. I will, however caution against this interpretation. What this tells us is that an increase in linkages ten years previous is associated with a decrease in freedom of expression. While this is possible, it is very unlikely that a change would take ten years to manifest itself. Using a time span as long as this also removes a lot of information making it possible that we have created an artificial effect.
 
-Another thing to note is that the coefficient for linkages to the West is consistently negative and significant. This is the same as in Table \ref{tab:h1_lead}. The effect size is negligible, however, so this is likely to be an effect we find because we have enough data, not because of an actual effect. This is to be discussed in the next chapter.
+Another thing to note is that the coefficient for linkages to the West is consistently negative and significant. This is the same as in Table \ref{tab:h1_lead}.
 
 \begin{table}[!htb]
 \centering
@@ -343,32 +342,28 @@ Lead freedom & 2 & 4 & 6 & 8 & 10 \\
 }
 \end{table} 
 
-\section{Effect Sizes} \label{sec:effect}
-While the results are not significant, I want to use two examples to illustrate the estimated effect sizes. If they had been significant how strong would they be? I include one example representing electoral autocracies and one representing liberal democracies to show the difference between regime types. First we need to know a bit more about the dependent and independent variables. Table \ref{tab:summary} includes some descriptive information of the variables. The freedom variable has a mean of 0.66 and a standard deviation of 0.29. For the linkage variable, we see that the mean is about 0.08, which is not a lot, considering the variable varies between 0 and 0.48. It also has a standard deviation of 0.08, which is not a lot.
+\section{Understanding the coefficient} \label{sec:effect}
+While the results are not significant, I want to illustrate the estimated effects. If they had been significant how strong would they be? First we need to know a bit more about the dependent and independent variables. Table \ref{tab:summary} includes some descriptive information of the variables. The freedom variable has a mean of 0.66 and a standard deviation of 0.29. For the linkage variable, we see that the mean is about 0.08, which is not a lot, considering the variable varies between 0 and 0.48. It also has a standard deviation of 0.08, which is not a lot.
 
-Using the estimates from Model 2.5 in Table \ref{tab:h2}, I will look at the effect sizes for each of the regime types. Everything else being equal, an increase of one standard deviation in the change score, is by Model 2.5 expected to lead to a 0.00992 point decrease in freedom score for closed autocracies, a 0.00920 increase for electoral autocracies, a 0.00032 decrease for electoral democracies, and a 0.01008 decrease for liberal democracies. Given that the standard deviation of the freedom variable is 0.29, this is close to nothing. This is to say that, even had the coefficients been statistically significant, the effect would not have been substantial. This is unsurprising as for most countries, both the freedom score and linkage score is quite stable, with more dramatic changes occurring only sporadically, and are thus less likely to show evidence of a pattern.
+\subsection{Linkages to China}
+Using the estimates from Model 1.6 in Table \ref{tab:h1}, I will look at the what the coefficients tells us about two countries. If we had two perfectly similar countries: GDP per capita, resource rents, aid, linkages to the West, and regime type all being the same, a difference of 0.08 in the linkages to China variable---the standard deviation of said variable---is by Model 2.5 expected to lead to a:
+\begin{equation*}
+    (-0.058 \cdot 0.08) = -0.00464
+\end{equation*}
+lower freedom of expression score. Given that the standard deviation of the freedom variable is 0.29, this is close to nothing.
 
-Below I show off two examples of the effect to try to get across exactly the size of the effect I have estimated. 
+Now, lets also imagine that the country with more linkages to China continue to increase its ties with China by the same amount each year for a 15 year period. This would give us a predicted score of:
+\begin{equation*}
+    (-0.058 \cdot 0.08)\cdot 15 = -0.0696
+\end{equation*}
+Which is still very small. This is to say that, even had the coefficients been statistically significant, the effect would not have been substantial. This is unsurprising as for most countries, both the freedom score and linkage score is quite stable, with more dramatic changes occurring only sporadically, and are thus less likely to show evidence of a pattern.
 
-\subsection{XX}
-I want to start by examining how the freedom of expression score developed in XX from XXXX to XXXX. XX in this time period is an example of a country that was well predicted by my model, at the same time as the increase in linkages to China was substantial. This makes it perfect to showcase the results. XX was in XXXX a  
-\begin{equation} \label{gabon_decrease}
-    (-0.369 \cdot 0.186)  = -0.069
-\end{equation}
-giving Nigeria a predicted score of
-\begin{equation} \label{nigeria_score}
-    0.901 - 0.069 = 0.832
-\end{equation}
-in 2013. If we compare this against the actual score in 2013, which was 0.893, we see that we overestimate this relationship with a fair amount. This precludes any other factors playing a part, but it is illustrative of the effect size.
-
-\subsection{XX}
-We can also take a look at Laos, which is classified as a closed autocracy throughout the time period I am looking at. In 2020 Laos increased its linkages to China with 0.028, a little bit less than a standard deviation in the variable measuring changes in linkages to China. Using this to predict Laos's freedom of democracy score in 2021 we get, assuming that everything else is constant:
-\begin{equation}
-    0.022 + (0.300 \cdot 0.028) = 0.0304
-\end{equation}
-This prediction measures up very well with the actual score in 2021 which was 0.030, of course, precluding other changes.
-
-The results from this exercise in predictions highlights two major points. One, that more extreme changes are harder for the model to predict, which is a problem for most models. And two, that the actual size of the effect is not that substantial. It is important to keep in mind, however, that while the year to year effect may not be that substantial, over time it might be a somewhat influential factor in determining where freedom of expression is headed.
+\subsection{Linkages to the West} \label{sec:west_coefficients}
+As it is interesting that the estimated coefficient for linkages to the West is significant across several specifications, I will also look at the size of this effect. I start as before with examining the summary statistics table \ref{tab:summary}. Linkages to the West have a standard deviation of 1.08. This is much more variation then for the linkage variable to China. Calculating the estimated effect for one year using model 1.6 gives us an estimated decrease in freedom of expression score of about 0.016, much smaller than the standard deviation in the variable. However, if we allow a country to grow its linkages to the West for 15 years, we get an estimated freedom of expression score that is:
+\begin{equation*}
+    (-0.016 \cdot 1.08)*15 = -0.2592
+\end{equation*}
+lower than for a similar country that has not increased its linkages to the West. This is a sizeable decrease in freedom of expression score, which seems quite peculiar. More on this in the discussion chapter below. 
 
 \section{Robustness Tests} \label{sec:robust}
 To test the robustness of the results, I run several different model specifications to see how well the models hold up to scrutiny. While I present the results here, all the tables referred to in this section can be found in Appendix \ref{apn:robust}. I make two major changes to my models, to assess how all the models in Tables \ref{tab:h1} and \ref{tab:h2} stand up to different forms of scrutiny. First I investigate how removing the one year time lead impacts the models. Then I replace the linkages to China variable, which heretofore have made use of the FBIC-variable, with the bandwidth variable also featured in the FBIC dataset \citep{moyer_china-us_2021}. Doing this ensures that the estimations are consistent in their results across different forms of specifications. I find that they are generally consistent, but with some differences.
