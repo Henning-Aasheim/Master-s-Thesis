@@ -1,13 +1,13 @@
 \lettrine{T}{his part of the appendix} includes some notes on the figures, as well as some descriptive data which was unnecessary to include in the main part of the thesis. I include this in the appendix so that everything I have done is reproducible.
 
 \section{Countries} \label{sec:countries}
-
+I first include a list over all the countries featured in the regression. I have information for the two main variables (freedom of expression and linkages to China) for almost every year between 1994. There are of course some country that have split up over this period and these are counted as separate countries. For the freedom of expression variable I have data up until 2024, as the new V-Dem data \citep{coppedge_v-dem_2025} was released in March. The table also accounts for missingness on the other variables. E.g., I do not have data on natural resources rents for Afghanistan between 1994 and 2001, and I do not have aid data for 2023.
 
 
 {\fontsize{8pt}{8pt}\selectfont\tabcolsep=2pt\centering  % hold it local
 \begin{longtable}{lcccccc}
 \toprule
-Country & Start year & End year & NA GDP & NA rents\textsuperscript{1} & NA aid & NA West\\
+Country & Start year & End year\textsuperscript{1} & NA GDP & NA rents\textsuperscript{2} & NA aid & NA West\\
 \midrule
 Afghanistan & 1994 & 2023 &  & 1994-2001 & 2023 & \\
 Albania & 1994 & 2023 &  &  &  & \\
@@ -218,7 +218,8 @@ Yemen & 1994 & 2023 &  & 1994-2001 & 2023 & \\
 Zambia & 1994 & 2023 &  &  &  & \\
 Zimbabwe & 1994 & 2023 &  &  &  & \\
 \bottomrule
-\multicolumn{7}{l}{\rule{0pt}{1em}\textsuperscript{1} Natural resources rents only has data from 1994-2021, missing data indicates missing variables other than 2022-2023}\\
+\multicolumn{7}{l}{\rule{0pt}{1em}\textsuperscript{1} I have data on the freedom variable for all countries up until 2024.} \\ 
+\multicolumn{7}{l}{\rule{0pt}{1em}\textsuperscript{2} Natural resources rents only has data from 1994-2021, missing data indicates missing variables other than 2022-2023} \\
 \end{longtable}
 }
 
@@ -284,6 +285,6 @@ This figure is based on V-Dem's Electoral Democracy Index and shows the developm
 \subsection{Figure \ref{fig:link-china}: linkages to China}
 For this figure I have made some important decisions that impact some of the results if done to other specifications. The first problem I had, was that some of the countries did not have numbers for 1994. This problem mainly occurs as an artifact of countries splitting up. There are four major countries affected by this: Kosovo, Montenegro, Serbia, and South Sudan. To include them, I decided to use their pre-independence counterpart as the 1994 value. This probably makes the values for 1994 artificially high, leading them to getting a lower score than would else have been the case. This is highly likely in the case of Serbia. The second thing to note is the definition of the size of the changes. I have arbitrarily defined them, based on what is normal in the same data. I have made the following distinctions: Higher than 0.2 change in linkages equals a very strong change. Change between 0.2 and 0.08 i define as a strong change. Change between 0.08 and 0.03 I define as change, and everything between 0 and 0.03 I define as no or small change. 
 
-\subsection{Figure \ref{fig:west}: Linkages to the West}
+\subsection{Figure \ref{fig:west}: linkages to the West}
 
 \subsection{Figure \ref{fig:scp}: single country plots}
