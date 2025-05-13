@@ -1,10 +1,8 @@
-
-
 \lettrine{H}{having discussed theories} about how our variables are connected, I here construct a research design for testing the implications of my theory. It should be remembered that we are trying to answer if a country's linkages to China affects the level of freedom of expression the population enjoys. To achieve this, it is necessary to have access to good quality data and a credible research strategy.
 
 The first part of the chapter features a discussion of the conceptualisation and operationalisation of our two main variables: \textit{linkages} and \textit{freedom of expression}. I implicitly build this discussion on \citet{adcock_measurement_2001, gerring_what_1999}, who advocates a clear and transparent definition of the variables. Both my main variables are hard to define in a universally accepted manner, which necessitates a thorough explanation of my choices. After discussing the data, the middle part of the chapter will be concerned with the research methodology, specifically how I build the statistical models. This leaves only the end of the chapter; concerning various control-variables which must be incorporated into the model to isolate the actual effect of the linkages from other spurious causes. 
 
-\section{The Dependent Variable: \textit{Freedom of Expression}}
+\section{Dependent Variable: \textit{Freedom of Expression}}
 I start by conceptualising and operationalising the dependent variable. There are some challenges to doing this, but the two most important points to take from this section is that: one, my definition of freedom of expression is a nuanced one; and two, that this requires me to use a subjective measure of the variable. The operationalisation will be achieved by using the Varieties of Democracy Institute's (V-Dem) Freedom of Expression and Alternative Sources of Information index \citep{coppedge_v-dem_2025}. 
 
 \subsection{Conceptualising freedom of expression}
@@ -32,13 +30,51 @@ The fourth limitation is that certain exceptions should be made. Absolute freedo
 As it stands, our conceptualisation of freedom of expression can be summarised as: \textit{The freedom to express one's  political opinions, and hear others',  without fear of any repercussions from the state, or other actors, and the content should not be a cause of undue hurt to the object.}
 
 \subsection{Operationalising freedom of expression}
-The above conceptualisation has important implications for how we operationalise freedom of expression. We have many qualifications, and the second limitation forces us not to rely on a simple count of laws limiting freedom of expression, we are better off using a subjective, rather than an objective, assessment of our variable. Subjective variables come with their own challenges, like inter-coder reliability and systematic bias \citep[for a discussion see:][]{little_measuring_2024, miller_how_2024}, however, the gains by using a more nuanced approach makes it a worthwhile endeavour.
+The above conceptualisation has important implications for how we operationalise freedom of expression. We have many qualifications, and the second limitation forces us not to rely on a simple count of laws limiting freedom of expression. Because of these limitations, I have decided to use a subjective, rather than an objective, assessment of the variable. Subjective variables come with their own challenges, like inter-coder reliability and systematic bias \citep[for a discussion see:][]{little_measuring_2024, miller_how_2024}, however, the gains by using a more nuanced approach makes it a worthwhile.
 
-The best and most reliable operationalisation of freedom of expression comes from the V-Dem institute's comprehensive V-Dem dataset \citep{coppedge_v-dem_2025}. The dataset contains many variables and indices used to measure democracy and features relevant to democracy, freedom of expression being a notable one amongst these. The strength of the V-Dem data is that it is thorough, open about its methodology, and includes measures against problems of inter-coder reliability \citep{coppedge_v-dem_2024-2}. (Something about many others using it) There are of course other possible measures to use like Freedom House's \textit{Freedom in the World} dataset \citep{freedom_house_freedom_2024} and the Economist Intelligence Unit's \textit{Democracy Index} \citep{economist_intelligence_unit_democracy_2024}, which both contain variables related to freedom of expression, however, these datasets are hard to disaggregate and have no transparent measures against issues of inter-coder reliability.
+\begin{table}[!hbt]
+    \centering
+    \caption{Components of the freedom of expression index}
+    \label{tab:freedom}
+    \vspace{0.5em}
+    \resizebox{\textwidth}{!}{
+    \begin{tabularx}{\textwidth} {
+     >{\noindent\justifying\arraybackslash\hsize=.15\hsize}X 
+     >{\noindent\raggedright\arraybackslash\hsize=.25\hsize}X
+     >{\noindent\justifying\arraybackslash\hsize=.6\hsize}X}
+        \toprule
+        \textbf{Component name} & \textbf{Component description} & \textbf{Question} \\
+         \midrule
+        v2mecenefm & Media censorship effort & Does the government directly or indirectly attempt to censor the print or broadcast media? \\
+        \addlinespace
+        v2meharjrn & Harassment of journalists & Are individual journalists harassed -- i.e., threatened with libel, arrested, imprisoned, beaten, or killed -- by governmental or powerful nongovernmental actors while engaged in legitimate journalistic activities? \\
+        \addlinespace
+        v2mebias & Media bias & Is there media bias against opposition parties or candidates? \\
+        \addlinespace
+        v2meslfcen & Media self-censorship & Is there self-censorship among journalists when reporting on issues that the government considers politically sensitive? \\
+        \addlinespace
+        v2mecrit & Print/broadcast media critical & Of the major print and broadcast outlets, how many routinely criticize the government? \\
+        \addlinespace
+        v2merange & Print/broadcast media perspectives & Do the major print and broadcast media represent a wide range of political perspectives? \\
+        \addlinespace
+        v2cldiscm & Freedom of discussion for men & Are men able to openly discuss political issues in private homes and in public spaces?\\
+        \addlinespace
+        v2cldiscw & Freedom of discussion for women & Are women able to openly discuss political issues in private homes and in public spaces? \\
+        \addlinespace
+        v2clacfree & Freedom of academic and cultural expression & Is there academic freedom and freedom of cultural expression related to political issues? \\
+        \bottomrule
+        \multicolumn{3}{p{\textwidth}}{\raggedright{\textit{Components are found in \citet[]{coppedge_v-dem_2024-1}}}}
+    \end{tabularx}
+    }
+\end{table}
 
-Among the variables and indices of the V-Dem dataset we find the Freedom of Expression and Alternative Sources of Information index (henceforth Freedom of Expression index) which we can use as the dependent variable. The variable measures freedom of expression on a theoretical scale from 0 to 1 and answers the question: `\textit{To what extent does government respect press and media freedom, the freedom of ordinary people to discuss political matters at home and in the public sphere, as well as the freedom of academic and cultural expression?}' \citep[pp. 50-51]{coppedge_v-dem_2024-1}. Here 0 denotes a hypothetical country without freedom of expression and 1 denotes a hypothetical country with full freedom of expression. Every real country is somewhere in-between these ideal extremes. In  real terms, the lowest scoring country was North Korea. Between 1994 and 2024 it had a freedom of expression score of 0.012 for every year. The highest scoring country was Denmark in the years from 1994-2010 and 2012-2015 with a score of 0.988.\footnote{Being exactly 0.012 less than 1, this is likely to be an artifact of the aggregation procedure \citep{coppedge_v-dem_2024-2}}. 
+The most transparent and most reliable operationalisation of freedom of expression comes from the V-Dem institute's comprehensive V-Dem dataset \citep{coppedge_v-dem_2025}. The dataset as a whole contains many variables and indices used to measure democracy and features relevant to democracy, freedom of expression being a notable one amongst these. The strength of the V-Dem data is that it is thorough, open about its methodology, and includes measures against problems of inter-coder reliability \citep{coppedge_v-dem_2024-2}. There are of course other possible measures to use like Freedom House's \textit{Freedom in the World} dataset \citep{freedom_house_freedom_2024} and the Economist Intelligence Unit's \textit{Democracy Index} \citep{economist_intelligence_unit_democracy_2024}, which both contain variables related to freedom of expression, however, these datasets are hard to disaggregate and have no transparent measures against issues of inter-coder reliability.
 
-\section{The Independent Variable: \textit{Linkages}}
+V-Dem's measure of freedom of expression is found in the Freedom of Expression and Alternative Sources of Information index (henceforth Freedom of Expression index), which I will use as the dependent variable. It is an aggregated index made up of nine components (see Table \ref{tab:freedom}), to try to capture freedom of expression in a way that has near universal validity. 
+
+The variable measures freedom of expression on a theoretical scale from 0 to 1 and answers the question: `\textit{To what extent does government respect press and media freedom, the freedom of ordinary people to discuss political matters at home and in the public sphere, as well as the freedom of academic and cultural expression?}' \citep[pp. 50-51]{coppedge_v-dem_2024-1}. Here 0 denotes a hypothetical country without freedom of expression and 1 denotes a hypothetical country with full freedom of expression. Every real country is somewhere in-between these ideal extremes. In  real terms, the lowest scoring country was North Korea. Between 1994 and 2024 it had a freedom of expression score of 0.012 for every year. The highest scoring country was Denmark in the years from 1994-2010 and 2012-2015 with a score of 0.988.\footnote{Being exactly 0.012 less than 1, this is likely to be an artifact of the aggregation procedure \citep{coppedge_v-dem_2024-2}.}
+
+\section{Independent Variable: \textit{Linkages}}
 In this section I define and operationalise the independent variable \textit{linkages}. The linkages are conceptualised as a dyadic relationship between countries in some areas of co-operation. They are further divided into the number of linkages and the size of the linkages. Specifically, I use the Formal Bilateral Influence Capacity index (FBIC) developed and compiled by \citet{moyer_china-us_2021}.
 
 \subsection{Conceptualising linkages to China}
@@ -64,7 +100,7 @@ To each dimension, \citet{levitsky_linkage_2006} includes several indicators, th
  >{\noindent\justifying\arraybackslash\hsize=.6\hsize}X
  >{\centering\arraybackslash\hsize=.1\hsize}X}
 \toprule
-Dimension & Inclusion & FBIC \\
+\textbf{Dimension} & \textbf{Inclusion} & \textbf{FBIC} \\
 \midrule
 Economic linkage
 & Trade, investments, credit, and bilateral and multilateral aid flows.
@@ -108,7 +144,7 @@ While the FBIC index do lack some of the dimensions and indicators found in \cit
  >{\noindent\justifying\arraybackslash\hsize=.425\hsize}X
  >{\noindent\justifying\arraybackslash\hsize=.425\hsize}X}
 \toprule
-Dimension & Bandwidth & Dependence \\
+\textbf{Dimension} & \textbf{Bandwidth} & \textbf{Dependence} \\
 \midrule
 Economic
 & Total goods trade & Goods trade, \% of total \\
@@ -130,7 +166,7 @@ Political
 \end{table}
 
 \section{Observations}
-Before diving into the methodology, I would like to summarise the variables and their impact on the research design. First, our unit of analysis---given by our research question---is country-years. In my study I attempt to say something about how different countries change over time,  conditioned on their interactions with China. As the data I am using is gathered on the country-level for each year, it means that my unit of observation will be identical to my unit of analysis. Each row in my data represents a single country in a single year. I include the 174 countries where I have data on the two main variables. In addition, I restrict my sample to the years from 1994 to 2023. The reason for choosing 1994 as a starting point, is because \citet{luhrmann_third_2019} defined this as the starting point of the third wave of autocratisation, and China would not be a relevant actor before this. The end date of 2023 is used because this is the last year I have data on linkage scores. It should be noted that use democracy scores up until 2024,  which avoids losing observations when using a one-year lead on the dependent variable. A list of the countries, as well as the years for which there is data on the variables is included in section \ref{sec:countries} of Appendix \ref{apn:notes}. 
+Before diving into the methodology, I would like to summarise the variables and their impact on the research design. First, our unit of analysis -- given by our research question -- is country-years. In my study I attempt to say something about how different countries change over time,  conditioned on their interactions with China. As the data I am using is gathered on the country-level for each year, it means that my unit of observation will be identical to my unit of analysis. Each row in my data represents a single country in a single year. I include the 174 countries where I have data on the two main variables. In addition, I restrict my sample to the years from 1994 to 2023. The reason for choosing 1994 as a starting point, is because \citet{luhrmann_third_2019} defined this as the starting point of the third wave of autocratisation, and China would not be a relevant actor before this. The end date of 2023 is used because this is the last year I have data on linkage scores. It should be noted that use democracy scores up until 2024,  which avoids losing observations when using a one-year lead on the dependent variable. A list of the countries, as well as the years for which there is data on the variables is included in section \ref{sec:countries} of Appendix \ref{apn:notes}. 
 
 \section{Methodology}
 My main objective is to establish if there is -- or is not -- a negative causal relationship between linkages to China and freedom of expression. To achieve this, a sound and transparent methodology is required. In an ideal world, this could have been done by using an experiment, where half the countries would establish linkages with China, and the rest would not. At the same time, I would like to hold all other variables constant, so I knew for sure that the changes that were occurring was caused by the linkages to China.
@@ -138,7 +174,7 @@ My main objective is to establish if there is -- or is not -- a negative causal 
 This is not possible; next to all countries have extensive linkages to China and there are myriads of variables affecting both freedom of expression and linkages with China. However, this little hypothetical is instructive, as it offers an idealised guide to what needs to be controlled for. We first need a treatment: which are countries with different amount of exposure to China. We then need to exclude the possibility of reversed causation, e.g., by either lagging the independent variables or, as I do here, lead the dependent variable. In addition to these methodological steps, I build on the causal mechanisms I established in the previous chapter. Then comes the complicated part where I have to remove the effect of other variables. This is not an easy task, however, by using a fixed effects model and including the control variables described above I attempt to isolate the relationship between linkages to China and freedom of expression.
 
 \subsection{Variable bias}
-Excluding variables that cause change in both the dependent and independent variable is a major challenge for inference; therefore I want to spend a little more time talking about how this is done. My research design allows me to control for three distinct types of variables. These are variables that are constant for a unit (country), variables that are constant for a time period (years), and finally, variables that are different across both unit and time. 
+Excluding variables that cause change in both the dependent and independent variable is a major challenge for inference \citep[pp. 205-210]{toshkov_research_2016}; therefore I want to spend a little more time talking about how this is done. My research design allows me to control for three distinct types of variables. These are variables that are constant for a unit (country), variables that are constant for a time period (years), and finally, variables that are different across both unit and time \citep{huntington-klein_effect_2022}. 
 
 The first type of variables to be controlled for, are variables which are different between countries, but stays constant for each country. This can for example be different geographical positions relative to China and different cultural mentalities, both of which could have an impact on both linkages to China and freedom of expression. E.g., a country could be in a region far away from China with a cultural propensity to value freedom of expression. In this case we would expect the country to have few linkages to China and few restrictions on freedom of expression.
 
@@ -179,7 +215,9 @@ The third variable is Official Development Assistance (ODA), more commonly known
 
 The fourth control variable measures the impact of a country's \textit{linkages to the West}. The whole theory of linkages is developed from the point of view that linkages to Western countries can aid democratisation \citep{levitsky_linkage_2006}. It is not far-fetched, then, to think that these linkages may serve to strengthen freedom of expression. Linkages to Western varies over time and country, and if unaccounted for might obscure the effect of the Chinese linkages. When a country increases its linkages to the West, linkages to China might decrease, and vice versa. It is therefore an important variable to control for. The linkage variable to the West is the sum of the FBIC-score of all `Western' countries. I define Western countries as any Western European country, any country with strong inheritance from Western European countries (like the US) and any democratic and strongly Western aligned country (e.g., Japan).\footnote{I include a list of the countries that make up the linkages to the West variable in Appendix \ref{apn:notes}.} The measure is a continuous variable which varies between 0.03 and 5.32. Here 0 means zero influence and 5.32 is the highest recorded influence in the restricted dataset (1994-2023). 
 
-The fifth and final variable is \textit{regime type}. Regime type is added for two main reasons. One is that regime type is another variable that changes both across time and country. The difference between countries is obvious, some are autocracies, while others are democracies. However, they might change over time, either becoming more or less democratic. The second reason is to enquire into our second hypothesis (\textit{H\textsubscript{2}}), to see if there are differences between regime types in how linkages affect freedom of expression. To measure regime type, I use the Regimes of the World variable included in the V-Dem dataset \citep{coppedge_v-dem_2025}. This is an ordinal variable of four levels between 0 and 3, where 0 represents a closed autocracy, 1 represents an electoral autocracy, 2 represents an electoral democracy, and 3 represents a liberal democracy. One consideration to make is that the freedom of expression variable goes into constructing this variable. However, this should not be a problem as this is more akin to an indexing variable. In Table \ref{tab:summary} I have included summary statistics for all my variables.
+The fifth and final variable is \textit{regime type}. Regime type is added for two main reasons. One is that regime type is another variable that changes both across time and country. The difference between countries is obvious, some are autocracies, while others are democracies. However, they might change over time, either becoming more or less democratic. The second reason is to enquire into our second hypothesis (\textit{H\textsubscript{2}}), to see if there are differences between regime types in how linkages affect freedom of expression. To measure regime type, I use the Regimes of the World variable included in the V-Dem dataset \citep{coppedge_v-dem_2025}. This is an ordinal variable of four levels between 0 and 3, where 0 represents a closed autocracy, 1 represents an electoral autocracy, 2 represents an electoral democracy, and 3 represents a liberal democracy. One consideration to make is that the freedom of expression variable goes into constructing this variable. However, this should not be a problem as this is more akin to an indexing variable. In Appendix \ref{apn:model} I show some statistics on the variation of this variable on both the dependent and independent variables. I find that all include a fair amount of variation on the dependent variable, however, the democracies show less variation than the autocracies (see Figure \ref{fig:variation_freedom}\footnote{I have also included a plot of the linkages to China variable to look at the variation between regime types for this variable as well (\ref{fig:variation_fbic}).}).
+
+In Table \ref{tab:summary} I have included summary statistics for all my variables.
 
 \begin{table}[H]
 \centering
@@ -209,7 +247,7 @@ Regime & 5368 & 1.59 & 2.00 & 1.00 & 0.00 & 3.00 & \includegraphics[height=1em]{
 \subsection{Challenges to inference}
 While fixed effects solves many inference problems by removing time and unit constants, reducing unobserved variable bias. However, it is far from a panacea, and we need to be conscious of this fact. The first problem with using fixed effects is that there can still be \textit{unobserved heterogeneity} (\citeauthor{cunningham_causal_2021} \citeyear{cunningham_causal_2021}, Chapter 8, \citeauthor{hill_limitations_2020} \citeyear{hill_limitations_2020}, pp. 363-364). These are variable that vary across both unit and time. I try to account for this heterogeneity by including control variables, but there will always be a possibility that there is some unobserved heterogeneity; a risk that can only be mitigated to the best of one's ability.
 
-A second challenge is that fixed-effects modelling can have \textit{low statistical power} \citep[pp. 361-362]{hill_limitations_2020}. Taking the within variation might limit information and this makes estimation harder. My linkage variable has a mean of 0.08, which is quite small. So, this could be a challenge. I still consider there to be enough variation to be useful, but this is something to keep in mind.
+A second challenge is that fixed-effects modelling can have \textit{low statistical power} \citep[pp. 361-362]{hill_limitations_2020}. Taking the within variation might limit information and this makes estimation harder. My linkage variable has a mean of 0.08, which is quite small. So, this could be a challenge for inference. This is a conscious choice, as it relates to the bias-variance trade-off. The bias-variance trade-off is that when decreasing one source of error, e.g., bias, the other increases \citep[pp. 37-38]{hastie_elements_2009}. This is a problem, as both are sources of error in the estimations. With high bias, the estimations are likely to be wrong vis-à-vis the true estimates, with high variance, the measurement errors become larger\citep[pp. 37-38]{hastie_elements_2009}. I consider bias to be the bigger challenge to inference, and I therefore use a model which reduces bias, but is less likely to get a significant result.
 
 The last major concern of fixed-effects is that \textit{coefficients are harder to interpret} \citep[pp. 364-365]{hill_limitations_2020}. This is especially so for the two-way fixed effect model I use here. To try to make it easier for the reader I will use examples, to show how the coefficients might be interpreted.
 
